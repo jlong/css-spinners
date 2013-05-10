@@ -1,0 +1,34 @@
+@import "base";
+
+$heart-color: rgba(#cd0000, 0.3);
+
+@include keyframes(beat) {
+  0%     { @include transform(scale(1)); }
+  50%    { @include transform(scale(1.1)); }
+  100%   { @include transform(scale(1)); }
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.heartbeat:not(:required) {  
+  position: relative;  
+  width: 100px;  
+  height: 90px; 
+  @include animation(beat 0.7s ease 0s infinite normal);
+  &:after, &:before {
+    position: absolute;
+    content: "";  
+    left: 50px;  
+    top: 0;  
+    width: 50px;  
+    height: 80px;  
+    background: #cd0000;   
+    @include border-radius(50px 50px 0 0);   
+    @include transform(rotate(-45deg));   
+    @include transform-origin(0, 100%); 
+  }
+  &:after {
+    left: 0;   
+    @include transform(rotate(45deg));   
+    @include transform-origin(100%, 100%); 
+  }
+} 
