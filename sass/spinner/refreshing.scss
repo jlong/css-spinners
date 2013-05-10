@@ -1,0 +1,35 @@
+@import "base";
+
+$refreshing-color: #9ac;
+
+@include keyframes(spinner) {
+  0%   { @include rotateZ(0deg); }
+  100% { @include rotateZ(360deg); }
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.refreshing:not(:required) {
+  @include animation(spinner 1000ms infinite linear);
+  @include border-radius(2.4em);
+  border: 0.4em solid $refreshing-color;
+  border-left-color: transparent;
+  color: transparent;
+  display: inline-block;
+  font-size: 10px;
+  width: 3em;
+  height: 3em;
+  text-indent: 100%;
+  
+  &:after {
+    display: block;
+    border: 0.5em solid transparent;
+    border-top-color: $refreshing-color;
+    border-left-color: $refreshing-color;
+    content: '';
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin-left: -0.2em;
+    margin-top: 1em;
+  }
+}

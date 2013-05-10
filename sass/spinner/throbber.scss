@@ -1,0 +1,45 @@
+@import "base";
+
+$throbber-color: #dde2e7 !default;
+$throbber-highlight-color: #6b9dc8 !default;
+$throbber-height: 1.5em !default;
+$throbber-segment-width: 0.9em !default;
+$throbber-spacing: 0.7em !default;
+
+@include keyframes(throbber) {
+  0%  { background: $throbber-color }
+  10% { background: $throbber-highlight-color }
+  40% { background: $throbber-color }
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.throbber:not(:required) {
+  @include animation(throbber 2000ms 300ms infinite ease-out);
+  background: $throbber-color;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: $throbber-segment-width;
+  height: $throbber-height;
+  margin: 0 ($throbber-segment-width + $throbber-spacing);
+  
+  &:before, &:after {
+    background: $throbber-color;
+    content: '\x200B';
+    display: inline-block;
+    width: $throbber-segment-width;
+    height: $throbber-height;
+    position: absolute;
+    top: 0;
+  }
+  
+  &:before {
+    @include animation(throbber 2000ms 150ms infinite ease-out);
+    left: -($throbber-segment-width + $throbber-spacing);
+  }
+  
+  &:after {
+    @include animation(throbber 2000ms 450ms infinite ease-out);
+    right: -($throbber-segment-width + $throbber-spacing);
+  }
+}

@@ -1,0 +1,42 @@
+@import "base";
+
+$spinner-color: rgba(#003, 0.3);
+
+@mixin keyframes($name) {
+  @-webkit-keyframes $name { @content }
+  @-moz-keyframes $name { @content }
+  @-o-keyframes $name { @content }
+  @keyframes $name { @content }
+}
+
+@mixin animation($value) {
+  @include experimental(animation, $value, -webkit, -moz, -ms, -o, official);
+}
+
+@include keyframes(spinner) {
+  0%   { @include rotateZ(0deg); }
+  100% { @include rotateZ(360deg); }
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.spinner:not(:required) {
+  @include animation(spinner 1500ms infinite linear);
+  @include border-radius(0.5em);
+  @include box-shadow(
+    $spinner-color 1.5em 0 0 0,
+    $spinner-color 1.1em 1.1em 0 0,
+    $spinner-color 0 1.5em 0 0,
+    $spinner-color -1.1em 1.1em 0 0,
+    $spinner-color -1.5em 0 0 0,
+    $spinner-color -1.1em -1.1em 0 0,
+    $spinner-color 0 -1.5em 0 0,
+    $spinner-color 1.1em -1.1em 0 0  
+  );
+  display: inline-block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin: 1.5em;
+  overflow: hidden;
+  text-indent: 100%;
+}
