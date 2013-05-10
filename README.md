@@ -51,5 +51,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.refreshing</td>
       <td>Circular spinning arrow. Great for refreshing content.</td>
     </tr>
+    <tr>
+      <td>.heartbeat</td>
+      <td>Animated beating heart.</td>
+    </tr>
   </tbody>
 </table>
