@@ -1,34 +1,47 @@
 @import "base";
 
-$heart-color: rgba(#cd0000, 0.3);
+$heartbeat-color: #e87;
+$heartbeat-size: 36px; // must be divisible by 2 and 3
+$heartbeat-rotation: rotate(45deg);
 
-@include keyframes(beat) {
-  0%     { @include transform(scale(1)); }
-  50%    { @include transform(scale(1.1)); }
-  100%   { @include transform(scale(1)); }
+/* Styles for old versions of IE */
+.heartbeat {
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.heartbeat:not(:required) {  
+.heartbeat:not(:required) {
+  @include animation(heartbeat 1300ms ease 0s infinite normal);
+  
+  display: inline-block;
   position: relative;  
-  width: 100px;  
-  height: 90px; 
-  @include animation(beat 0.7s ease 0s infinite normal);
+  overflow: hidden;
+  text-indent: -9999px;
+  width: $heartbeat-size;  
+  height: $heartbeat-size;
+  @include transform($heartbeat-rotation scale(1));
+  @include transform-origin(50%, 50%);
+  
   &:after, &:before {
     position: absolute;
     content: "";  
-    left: 50px;  
-    top: 0;  
-    width: 50px;  
-    height: 80px;  
-    background: #cd0000;   
-    @include border-radius(50px 50px 0 0);   
-    @include transform(rotate(-45deg));   
-    @include transform-origin(0, 100%); 
+    background: $heartbeat-color;
   }
+  
+  &:before {
+    @include border-left-radius($heartbeat-size / 3);
+    top: ($heartbeat-size/3);
+    left: 0;
+    width: $heartbeat-size;
+    height: (2 * $heartbeat-size / 3);
+  }
+  
   &:after {
-    left: 0;   
-    @include transform(rotate(45deg));   
-    @include transform-origin(100%, 100%); 
+    @include border-top-radius($heartbeat-size / 3);
+    top: 0;
+    left: ($heartbeat-size / 3);
+    width: (2 * $heartbeat-size / 3);
+    height: ($heartbeat-size / 3);
   }
 } 
