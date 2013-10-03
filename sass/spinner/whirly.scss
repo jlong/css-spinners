@@ -1,0 +1,50 @@
+@import "base";
+
+$whirly-size: 64px;
+$whirly-color: #e66;
+$whirly-speed: 1.25s;
+
+$whirly-radius: $whirly-size / 2;
+$whirly-dot-size: $whirly-size / 8;
+
+@include keyframes(whirly) {
+  0%   { @include rotateZ(0deg); }
+  100% { @include rotateZ(360deg); }
+}
+
+/* Styles for old versions of IE */
+.whirly {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.whirly:not(:required) {
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+  
+  display: inline-block;
+  width: $whirly-dot-size;
+  height: $whirly-dot-size;
+  
+  background: transparent;
+  @include border-radius(100%);
+  
+  $shadows: comma-list();
+  $angle: 0deg;
+  
+  @while $angle < 360deg {
+    $size: (18px - ($angle / 10deg * 1px)) / 3;
+    $radius: $whirly-radius - $size;
+    $x: $radius * sin($angle);
+    $y: $radius * cos($angle);
+    $shadows: append($shadows, $whirly-color $x $y 0 $size);
+    $angle: $angle + 2deg;
+  }
+  
+  @include box-shadow($shadows);
+  
+  @include animation(whirly $whirly-speed infinite linear);
+  @include transform-origin(50%, 50%);
+}

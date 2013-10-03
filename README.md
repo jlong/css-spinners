@@ -63,5 +63,17 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.three-quarters</td>
       <td>Minimal three-quarters donut spinner.</td>
     </tr>
+    <tr>
+      <td>.wobblebar</td>
+      <td>Animated wobbling progress bar.</td>
+    </tr>
+    <tr>
+      <td>.atebits</td>
+      <td>Staight out of Letterpress, an animated rotating Atebits logo.</td>
+    </tr>
+    <tr>
+      <td>.whirly</td>
+      <td>A comet-like rotating spinner.</td>
+    </tr>
   </tbody>
 </table>
