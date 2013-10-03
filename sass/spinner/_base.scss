@@ -10,3 +10,8 @@
 @mixin animation($value) {
   @include experimental(animation, $value, -webkit, -moz, -ms, -o, official);
 }
+
+@mixin animation-timing-function($value) {
+  @include experimental(animation-timing-function, $value, -webkit, -moz, -ms, -o, official);
+}
+

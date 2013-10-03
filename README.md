@@ -87,5 +87,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.circles</td>
       <td>Three rotating multi-colored circles.</td>
     </tr>
+    <tr>
+      <td>.plus</td>
+      <td>Animated Google Plus-like loader.</td>
+    </tr>
   </tbody>
 </table>
