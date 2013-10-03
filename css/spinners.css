@@ -396,3 +396,817 @@
   width: 24px;
   height: 12px;
 }
+
+@-webkit-keyframes gauge {
+  /* line 8, ../sass/spinner/gauge.scss */
+  0% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+
+  /* line 10, ../sass/spinner/gauge.scss */
+  10% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 11, ../sass/spinner/gauge.scss */
+  20% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 12, ../sass/spinner/gauge.scss */
+  24% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 14, ../sass/spinner/gauge.scss */
+  40% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 15, ../sass/spinner/gauge.scss */
+  54% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 16, ../sass/spinner/gauge.scss */
+  56% {
+    -webkit-transform: rotate(78deg);
+    -moz-transform: rotate(78deg);
+    -ms-transform: rotate(78deg);
+    -o-transform: rotate(78deg);
+    transform: rotate(78deg);
+  }
+
+  /* line 17, ../sass/spinner/gauge.scss */
+  58% {
+    -webkit-transform: rotate(73deg);
+    -moz-transform: rotate(73deg);
+    -ms-transform: rotate(73deg);
+    -o-transform: rotate(73deg);
+    transform: rotate(73deg);
+  }
+
+  /* line 18, ../sass/spinner/gauge.scss */
+  60% {
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+  }
+
+  /* line 19, ../sass/spinner/gauge.scss */
+  62% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 21, ../sass/spinner/gauge.scss */
+  70% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 23, ../sass/spinner/gauge.scss */
+  80% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 24, ../sass/spinner/gauge.scss */
+  83% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 25, ../sass/spinner/gauge.scss */
+  86% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 26, ../sass/spinner/gauge.scss */
+  89% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 28, ../sass/spinner/gauge.scss */
+  100% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+}
+
+@-moz-keyframes gauge {
+  /* line 8, ../sass/spinner/gauge.scss */
+  0% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+
+  /* line 10, ../sass/spinner/gauge.scss */
+  10% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 11, ../sass/spinner/gauge.scss */
+  20% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 12, ../sass/spinner/gauge.scss */
+  24% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 14, ../sass/spinner/gauge.scss */
+  40% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 15, ../sass/spinner/gauge.scss */
+  54% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 16, ../sass/spinner/gauge.scss */
+  56% {
+    -webkit-transform: rotate(78deg);
+    -moz-transform: rotate(78deg);
+    -ms-transform: rotate(78deg);
+    -o-transform: rotate(78deg);
+    transform: rotate(78deg);
+  }
+
+  /* line 17, ../sass/spinner/gauge.scss */
+  58% {
+    -webkit-transform: rotate(73deg);
+    -moz-transform: rotate(73deg);
+    -ms-transform: rotate(73deg);
+    -o-transform: rotate(73deg);
+    transform: rotate(73deg);
+  }
+
+  /* line 18, ../sass/spinner/gauge.scss */
+  60% {
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+  }
+
+  /* line 19, ../sass/spinner/gauge.scss */
+  62% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 21, ../sass/spinner/gauge.scss */
+  70% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 23, ../sass/spinner/gauge.scss */
+  80% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 24, ../sass/spinner/gauge.scss */
+  83% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 25, ../sass/spinner/gauge.scss */
+  86% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 26, ../sass/spinner/gauge.scss */
+  89% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 28, ../sass/spinner/gauge.scss */
+  100% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+}
+
+@-o-keyframes gauge {
+  /* line 8, ../sass/spinner/gauge.scss */
+  0% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+
+  /* line 10, ../sass/spinner/gauge.scss */
+  10% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 11, ../sass/spinner/gauge.scss */
+  20% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 12, ../sass/spinner/gauge.scss */
+  24% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 14, ../sass/spinner/gauge.scss */
+  40% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 15, ../sass/spinner/gauge.scss */
+  54% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 16, ../sass/spinner/gauge.scss */
+  56% {
+    -webkit-transform: rotate(78deg);
+    -moz-transform: rotate(78deg);
+    -ms-transform: rotate(78deg);
+    -o-transform: rotate(78deg);
+    transform: rotate(78deg);
+  }
+
+  /* line 17, ../sass/spinner/gauge.scss */
+  58% {
+    -webkit-transform: rotate(73deg);
+    -moz-transform: rotate(73deg);
+    -ms-transform: rotate(73deg);
+    -o-transform: rotate(73deg);
+    transform: rotate(73deg);
+  }
+
+  /* line 18, ../sass/spinner/gauge.scss */
+  60% {
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+  }
+
+  /* line 19, ../sass/spinner/gauge.scss */
+  62% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 21, ../sass/spinner/gauge.scss */
+  70% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 23, ../sass/spinner/gauge.scss */
+  80% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 24, ../sass/spinner/gauge.scss */
+  83% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 25, ../sass/spinner/gauge.scss */
+  86% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 26, ../sass/spinner/gauge.scss */
+  89% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 28, ../sass/spinner/gauge.scss */
+  100% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+}
+
+@keyframes gauge {
+  /* line 8, ../sass/spinner/gauge.scss */
+  0% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+
+  /* line 10, ../sass/spinner/gauge.scss */
+  10% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 11, ../sass/spinner/gauge.scss */
+  20% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 12, ../sass/spinner/gauge.scss */
+  24% {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+
+  /* line 14, ../sass/spinner/gauge.scss */
+  40% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 15, ../sass/spinner/gauge.scss */
+  54% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 16, ../sass/spinner/gauge.scss */
+  56% {
+    -webkit-transform: rotate(78deg);
+    -moz-transform: rotate(78deg);
+    -ms-transform: rotate(78deg);
+    -o-transform: rotate(78deg);
+    transform: rotate(78deg);
+  }
+
+  /* line 17, ../sass/spinner/gauge.scss */
+  58% {
+    -webkit-transform: rotate(73deg);
+    -moz-transform: rotate(73deg);
+    -ms-transform: rotate(73deg);
+    -o-transform: rotate(73deg);
+    transform: rotate(73deg);
+  }
+
+  /* line 18, ../sass/spinner/gauge.scss */
+  60% {
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+  }
+
+  /* line 19, ../sass/spinner/gauge.scss */
+  62% {
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+  }
+
+  /* line 21, ../sass/spinner/gauge.scss */
+  70% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 23, ../sass/spinner/gauge.scss */
+  80% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 24, ../sass/spinner/gauge.scss */
+  83% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 25, ../sass/spinner/gauge.scss */
+  86% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  /* line 26, ../sass/spinner/gauge.scss */
+  89% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 28, ../sass/spinner/gauge.scss */
+  100% {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+}
+
+/* Styles for old versions of IE */
+/* line 32, ../sass/spinner/gauge.scss */
+.gauge {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+/* line 38, ../sass/spinner/gauge.scss */
+.gauge:not(:required) {
+  background: #66ccaa;
+  -moz-border-radius-topleft: 32px;
+  -webkit-border-top-left-radius: 32px;
+  border-top-left-radius: 32px;
+  -moz-border-radius-topright: 32px;
+  -webkit-border-top-right-radius: 32px;
+  border-top-right-radius: 32px;
+  display: inline-block;
+  width: 64px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+}
+/* line 48, ../sass/spinner/gauge.scss */
+.gauge:not(:required)::before {
+  -webkit-animation: gauge 4000ms infinite ease;
+  -moz-animation: gauge 4000ms infinite ease;
+  -ms-animation: gauge 4000ms infinite ease;
+  -o-animation: gauge 4000ms infinite ease;
+  animation: gauge 4000ms infinite ease;
+  background: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 5.33333px;
+  width: 4px;
+  height: 26.66667px;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+/* line 61, ../sass/spinner/gauge.scss */
+.gauge:not(:required)::after {
+  content: '';
+  background: white;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  left: 25.6px;
+  top: 25.6px;
+  width: 12.8px;
+  height: 12.8px;
+}
+
+@-webkit-keyframes timer {
+  /* line 9, ../sass/spinner/timer.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 10, ../sass/spinner/timer.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes timer {
+  /* line 9, ../sass/spinner/timer.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 10, ../sass/spinner/timer.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes timer {
+  /* line 9, ../sass/spinner/timer.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 10, ../sass/spinner/timer.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes timer {
+  /* line 9, ../sass/spinner/timer.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 10, ../sass/spinner/timer.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* line 13, ../sass/spinner/timer.scss */
+body {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Styles for old versions of IE */
+/* line 19, ../sass/spinner/timer.scss */
+.timer {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+/* line 25, ../sass/spinner/timer.scss */
+.timer:not(:required) {
+  border: 6px solid #cc88dd;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+  width: 48px;
+  height: 48px;
+}
+/* line 36, ../sass/spinner/timer.scss */
+.timer:not(:required)::before {
+  -webkit-animation: timer 1250ms infinite linear;
+  -moz-animation: timer 1250ms infinite linear;
+  -ms-animation: timer 1250ms infinite linear;
+  -o-animation: timer 1250ms infinite linear;
+  animation: timer 1250ms infinite linear;
+  -webkit-transform-origin: 3px 3px;
+  -moz-transform-origin: 3px 3px;
+  -ms-transform-origin: 3px 3px;
+  -o-transform-origin: 3px 3px;
+  transform-origin: 3px 3px;
+  background: #cc88dd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 19.2px;
+  left: 15px;
+  top: 15px;
+}
+/* line 50, ../sass/spinner/timer.scss */
+.timer:not(:required)::after {
+  -webkit-animation: timer 15000ms infinite linear;
+  -moz-animation: timer 15000ms infinite linear;
+  -ms-animation: timer 15000ms infinite linear;
+  -o-animation: timer 15000ms infinite linear;
+  animation: timer 15000ms infinite linear;
+  -webkit-transform-origin: 3px 3px;
+  -moz-transform-origin: 3px 3px;
+  -ms-transform-origin: 3px 3px;
+  -o-transform-origin: 3px 3px;
+  transform-origin: 3px 3px;
+  background: #cc88dd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 16px;
+  left: 15px;
+  top: 15px;
+}
