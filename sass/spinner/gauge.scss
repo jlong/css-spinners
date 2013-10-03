@@ -1,0 +1,71 @@
+@import "base";
+
+$gauge-size: 64px;
+$gauge-speed: 4000ms;
+$gauge-color: #6ca;
+
+@include keyframes(gauge) {
+  0%   { @include rotateZ(-50deg); }
+  
+  10%  { @include rotateZ(20deg); }
+  20%  { @include rotateZ(60deg); }
+  24%  { @include rotateZ(60deg); }
+  
+  40%  { @include rotateZ(-20deg); }
+  54%  { @include rotateZ(70deg); }
+  56%  { @include rotateZ(78deg); }
+  58%  { @include rotateZ(73deg); }
+  60%  { @include rotateZ(75deg); }
+  62%  { @include rotateZ(70deg); }
+  
+  70%  { @include rotateZ(-20deg); }
+  
+  80%  { @include rotateZ(20deg); }
+  83%  { @include rotateZ(25deg); }
+  86%  { @include rotateZ(20deg); }
+  89%  { @include rotateZ(25deg); }
+  
+  100% { @include rotateZ(-50deg); }
+}
+
+/* Styles for old versions of IE */
+.gauge {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.gauge:not(:required) {
+  background: $gauge-color;
+  @include border-top-radius($gauge-size / 2);
+  display: inline-block;
+  width: $gauge-size;
+  height: $gauge-size / 2;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+  
+  &::before {
+    @include animation(gauge $gauge-speed infinite ease);
+    background: white;
+    @include border-radius($gauge-size / 32);
+    content: '';
+    position: absolute;
+    left: ($gauge-size / 2) - ($gauge-size / 32);
+    top: ($gauge-size / 12);
+    width: ($gauge-size / 16);
+    height: (5 * $gauge-size / 12);
+    @include transform-origin(50%, 100%);
+  }
+  
+  &::after {
+    content: '';
+    background: white;
+    @include border-radius($gauge-size / 8);
+    position: absolute;
+    left: ($gauge-size / 2) - ($gauge-size / 10);
+    top: ($gauge-size / 2) - ($gauge-size / 10);
+    width: ($gauge-size / 5);
+    height: ($gauge-size / 5);
+  }
+}
