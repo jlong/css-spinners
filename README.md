@@ -1,7 +1,7 @@
 Spinner.css
 ===========
 
-Simple CSS spinners and throbbers made with CSS.
+Simple CSS spinners and throbbers made with CSS and minimal HTML markup.
 
 ## Markup
 
@@ -41,7 +41,7 @@ Then apply the appropriate class name for the spinner of your choice to the mark
   <tbody>
     <tr>
       <td>.spinner</td>
-      <td>Traditional spinning circles.</td>
+      <td>Spinning circles.</td>
     </tr>
     <tr>
       <td>.throbber</td>
@@ -54,6 +54,14 @@ Then apply the appropriate class name for the spinner of your choice to the mark
     <tr>
       <td>.heartbeat</td>
       <td>Animated beating heart.</td>
+    </tr>
+    <tr>
+      <td>.gauge</td>
+      <td>Animated speedometer-like gauge with rotating needle.</td>
+    </tr>
+    <tr>
+      <td>.timer</td>
+      <td>Animated clock with spinning hands.</td>
     </tr>
   </tbody>
 </table>
