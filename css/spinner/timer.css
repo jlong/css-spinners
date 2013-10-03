@@ -70,11 +70,6 @@
   }
 }
 
-body {
-  text-align: center;
-  padding: 50px;
-}
-
 /* Styles for old versions of IE */
 .timer {
   font-family: sans-serif;

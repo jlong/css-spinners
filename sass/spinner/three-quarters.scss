@@ -8,11 +8,6 @@ $three-quarters-color: #38e;
   100% { @include rotateZ(360deg); }
 }
 
-body {
-  text-align: center;
-  padding: 50px;
-}
-
 /* Styles for old versions of IE */
 .three-quarters {
   font-family: sans-serif;

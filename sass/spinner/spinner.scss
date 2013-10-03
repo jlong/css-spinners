@@ -2,17 +2,6 @@
 
 $spinner-color: rgba(#003, 0.3);
 
-@mixin keyframes($name) {
-  @-webkit-keyframes $name { @content }
-  @-moz-keyframes $name { @content }
-  @-o-keyframes $name { @content }
-  @keyframes $name { @content }
-}
-
-@mixin animation($value) {
-  @include experimental(animation, $value, -webkit, -moz, -ms, -o, official);
-}
-
 @include keyframes(spinner) {
   0%   { @include rotateZ(0deg); }
   100% { @include rotateZ(360deg); }

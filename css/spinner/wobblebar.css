@@ -1,0 +1,465 @@
+@-webkit-keyframes wobblebar {
+  0% {
+    left: 4px;
+  }
+
+  3% {
+    left: 104px;
+  }
+
+  6% {
+    left: 4px;
+  }
+
+  9% {
+    left: 104px;
+  }
+
+  12% {
+    left: 4px;
+  }
+
+  15% {
+    left: 104px;
+  }
+
+  18% {
+    left: 32px;
+  }
+
+  27% {
+    left: 32px;
+  }
+
+  30% {
+    left: 104px;
+  }
+
+  33% {
+    left: 4px;
+  }
+
+  36% {
+    left: 104px;
+  }
+
+  39% {
+    left: 4px;
+  }
+
+  42% {
+    left: 104px;
+  }
+
+  45% {
+    left: 4px;
+  }
+
+  48% {
+    left: 104px;
+  }
+
+  51% {
+    left: 52px;
+  }
+
+  63% {
+    left: 52px;
+  }
+
+  66% {
+    left: 4px;
+  }
+
+  69% {
+    left: 104px;
+  }
+
+  72% {
+    left: 4px;
+  }
+
+  75% {
+    left: 104px;
+  }
+
+  78% {
+    left: 4px;
+  }
+
+  81% {
+    left: 104px;
+  }
+
+  84% {
+    left: 72px;
+  }
+
+  94% {
+    left: 72px;
+  }
+
+  97% {
+    left: 104px;
+  }
+}
+
+@-moz-keyframes wobblebar {
+  0% {
+    left: 4px;
+  }
+
+  3% {
+    left: 104px;
+  }
+
+  6% {
+    left: 4px;
+  }
+
+  9% {
+    left: 104px;
+  }
+
+  12% {
+    left: 4px;
+  }
+
+  15% {
+    left: 104px;
+  }
+
+  18% {
+    left: 32px;
+  }
+
+  27% {
+    left: 32px;
+  }
+
+  30% {
+    left: 104px;
+  }
+
+  33% {
+    left: 4px;
+  }
+
+  36% {
+    left: 104px;
+  }
+
+  39% {
+    left: 4px;
+  }
+
+  42% {
+    left: 104px;
+  }
+
+  45% {
+    left: 4px;
+  }
+
+  48% {
+    left: 104px;
+  }
+
+  51% {
+    left: 52px;
+  }
+
+  63% {
+    left: 52px;
+  }
+
+  66% {
+    left: 4px;
+  }
+
+  69% {
+    left: 104px;
+  }
+
+  72% {
+    left: 4px;
+  }
+
+  75% {
+    left: 104px;
+  }
+
+  78% {
+    left: 4px;
+  }
+
+  81% {
+    left: 104px;
+  }
+
+  84% {
+    left: 72px;
+  }
+
+  94% {
+    left: 72px;
+  }
+
+  97% {
+    left: 104px;
+  }
+}
+
+@-o-keyframes wobblebar {
+  0% {
+    left: 4px;
+  }
+
+  3% {
+    left: 104px;
+  }
+
+  6% {
+    left: 4px;
+  }
+
+  9% {
+    left: 104px;
+  }
+
+  12% {
+    left: 4px;
+  }
+
+  15% {
+    left: 104px;
+  }
+
+  18% {
+    left: 32px;
+  }
+
+  27% {
+    left: 32px;
+  }
+
+  30% {
+    left: 104px;
+  }
+
+  33% {
+    left: 4px;
+  }
+
+  36% {
+    left: 104px;
+  }
+
+  39% {
+    left: 4px;
+  }
+
+  42% {
+    left: 104px;
+  }
+
+  45% {
+    left: 4px;
+  }
+
+  48% {
+    left: 104px;
+  }
+
+  51% {
+    left: 52px;
+  }
+
+  63% {
+    left: 52px;
+  }
+
+  66% {
+    left: 4px;
+  }
+
+  69% {
+    left: 104px;
+  }
+
+  72% {
+    left: 4px;
+  }
+
+  75% {
+    left: 104px;
+  }
+
+  78% {
+    left: 4px;
+  }
+
+  81% {
+    left: 104px;
+  }
+
+  84% {
+    left: 72px;
+  }
+
+  94% {
+    left: 72px;
+  }
+
+  97% {
+    left: 104px;
+  }
+}
+
+@keyframes wobblebar {
+  0% {
+    left: 4px;
+  }
+
+  3% {
+    left: 104px;
+  }
+
+  6% {
+    left: 4px;
+  }
+
+  9% {
+    left: 104px;
+  }
+
+  12% {
+    left: 4px;
+  }
+
+  15% {
+    left: 104px;
+  }
+
+  18% {
+    left: 32px;
+  }
+
+  27% {
+    left: 32px;
+  }
+
+  30% {
+    left: 104px;
+  }
+
+  33% {
+    left: 4px;
+  }
+
+  36% {
+    left: 104px;
+  }
+
+  39% {
+    left: 4px;
+  }
+
+  42% {
+    left: 104px;
+  }
+
+  45% {
+    left: 4px;
+  }
+
+  48% {
+    left: 104px;
+  }
+
+  51% {
+    left: 52px;
+  }
+
+  63% {
+    left: 52px;
+  }
+
+  66% {
+    left: 4px;
+  }
+
+  69% {
+    left: 104px;
+  }
+
+  72% {
+    left: 4px;
+  }
+
+  75% {
+    left: 104px;
+  }
+
+  78% {
+    left: 4px;
+  }
+
+  81% {
+    left: 104px;
+  }
+
+  84% {
+    left: 72px;
+  }
+
+  94% {
+    left: 72px;
+  }
+
+  97% {
+    left: 104px;
+  }
+}
+
+/* Styles for old versions of IE */
+.wobblebar {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.wobblebar:not(:required) {
+  background: #aa99dd;
+  -webkit-border-radius: 10.66667px;
+  -moz-border-radius: 10.66667px;
+  -ms-border-radius: 10.66667px;
+  -o-border-radius: 10.66667px;
+  border-radius: 10.66667px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 128px;
+  height: 21.33333px;
+  position: relative;
+}
+.wobblebar:not(:required)::after {
+  -webkit-animation: wobblebar 15000ms infinite ease;
+  -moz-animation: wobblebar 15000ms infinite ease;
+  -ms-animation: wobblebar 15000ms infinite ease;
+  -o-animation: wobblebar 15000ms infinite ease;
+  animation: wobblebar 15000ms infinite ease;
+  background: white;
+  display: block;
+  -webkit-border-radius: 7.11111px;
+  -moz-border-radius: 7.11111px;
+  -ms-border-radius: 7.11111px;
+  -o-border-radius: 7.11111px;
+  border-radius: 7.11111px;
+  content: '';
+  position: absolute;
+  top: 3.55556px;
+  left: 4px;
+  width: 21.33333px;
+  height: 14.22222px;
+}
