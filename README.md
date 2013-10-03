@@ -91,5 +91,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.plus</td>
       <td>Animated Google Plus-like loader.</td>
     </tr>
+    <tr>
+      <td>.ball</td>
+      <td>A bouncing ball.</td>
+    </tr>
   </tbody>
 </table>

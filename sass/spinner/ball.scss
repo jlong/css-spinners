@@ -1,0 +1,136 @@
+@import "base";
+
+$ball-size: 200px;
+$ball-color: #f86;
+$ball-speed: 1500ms;
+
+$ball-highlight: adjust-color($ball-color, $lightness: 10%);
+$ball-diameter: $ball-size / 4;
+
+@include keyframes(ball) {
+  0%  {
+    @include transform(translate3d(0, 0, 0) scale3d(1, 1, 1));
+    @include animation-timing-function(ease-in);
+  }
+  45% {
+    @include transform(translate3d(0, $ball-size * 0.75, -10px) scale3d(1, 0.95, 1));
+    @include animation-timing-function(ease-in);
+  }
+  50% {
+    @include transform(translate3d(0, $ball-size * 0.75, -10px) scale3d(1, 0.5, 1));
+    @include animation-timing-function(linear);
+  }
+  55% {
+    @include transform(translate3d(0, $ball-size * 0.75, -10px) scale3d(1, 1.25, 1));
+    @include animation-timing-function(ease-out);
+  }
+}
+
+@include keyframes(ball-highlight) {
+  0%  {
+    @include transform(skew(-20deg, 0) translate3d(0, $ball-diameter / 20, 1px));
+    @include animation-timing-function(ease-in);
+  }
+  45% {
+    @include transform(skew(-30deg, 0) translate3d(0, 0, 1px));
+    @include animation-timing-function(ease-in);
+  }
+  50% {
+    @include transform(skew(-30deg, 0) translate3d(0, 0, 1px));
+    @include animation-timing-function(linear);
+  }
+  55% {
+    @include transform(skew(-30deg, 0) translate3d(0, 0, 1px));
+    @include animation-timing-function(ease-out);
+  }
+  100%  {
+    @include transform(skew(-20deg, 0) translate3d(0, $ball-diameter / 20 , 1px));
+    @include animation-timing-function(ease-in);
+  }
+}
+
+@include keyframes(ball-shadow) {
+  0%  {
+    @include transform(translate3d($ball-size / 3, $ball-size / 3, -1px) scale3d(1.25, 1.25, 1));
+    @include animation-timing-function(ease-in);
+  }
+  45% {
+    @include transform(translate3d($ball-diameter / 4, -$ball-diameter * 0.3, -1px));
+    @include animation-timing-function(ease-in);
+  }
+  50% {
+    @include transform(translate3d($ball-diameter / 4, -$ball-diameter * 0.3, -1px) scale3d(1, 1, 1));
+    @include animation-timing-function(linear);
+  }
+  55% {
+    @include transform(translate3d($ball-diameter / 4, -$ball-diameter * 0.3, -1px));
+    @include animation-timing-function(ease-out);
+  }
+  100%  {
+    @include transform(translate3d($ball-size / 3, $ball-size / 3, -1px) scale3d(1.25, 1.25, 1));
+    @include animation-timing-function(ease-in);
+  }
+}
+
+/* Styles for old versions of IE */
+.ball {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.ball:not(:required) {
+  position: relative;
+  display: inline-block;
+  // z-index: 1;
+  font-size: 0;
+  letter-spacing: -1px;
+  
+  border-radius: 100%;
+  background: $ball-color;
+  
+  width: $ball-diameter;
+  height: $ball-diameter;
+  
+  @include transform-style(preserve-3d);
+  @include transform(translate3d(0, 0, 0) scale3d(1, 1, 1));
+  @include transform-origin(0, 100%);
+  @include animation(ball $ball-speed infinite linear);
+  
+  &::after {
+    content: '';
+    
+    position: absolute;
+    top: $ball-diameter * 0.09;
+    left: $ball-diameter * 0.11;
+    // z-index: 1;
+      
+    width: $ball-diameter * 0.3;
+    height: $ball-diameter * 0.3;
+    
+    background: $ball-highlight;
+    border-radius: 100%;
+    
+    @include transform(skew(-20deg, 0) translate3d(0, $ball-diameter / 20, 1px));
+    @include animation(ball-highlight $ball-speed infinite linear);
+  }
+  
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: $ball-diameter;
+    left: $ball-diameter * 0.11;
+      
+    width: $ball-diameter;
+    height: $ball-diameter * 0.3;
+    
+    background: rgba(black, 0.2);
+    border-radius: 100%;
+    
+    @include transform(translate3d($ball-size / 3, $ball-size / 3, -1px) scale3d(1.25, 1.25, 1));
+    @include animation(ball-shadow $ball-speed infinite linear);
+    
+    @include filter(blur(1px));
+  }
+}
