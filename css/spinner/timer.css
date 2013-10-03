@@ -1,5 +1,4 @@
 @-webkit-keyframes timer {
-  /* line 9, ../../sass/spinner/timer.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -8,7 +7,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 10, ../../sass/spinner/timer.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -19,7 +17,6 @@
 }
 
 @-moz-keyframes timer {
-  /* line 9, ../../sass/spinner/timer.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -28,7 +25,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 10, ../../sass/spinner/timer.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -39,7 +35,6 @@
 }
 
 @-o-keyframes timer {
-  /* line 9, ../../sass/spinner/timer.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -48,7 +43,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 10, ../../sass/spinner/timer.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -59,7 +53,6 @@
 }
 
 @keyframes timer {
-  /* line 9, ../../sass/spinner/timer.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -68,7 +61,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 10, ../../sass/spinner/timer.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -78,21 +70,18 @@
   }
 }
 
-/* line 13, ../../sass/spinner/timer.scss */
 body {
   text-align: center;
   padding: 50px;
 }
 
 /* Styles for old versions of IE */
-/* line 19, ../../sass/spinner/timer.scss */
 .timer {
   font-family: sans-serif;
   font-weight: 100;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-/* line 25, ../../sass/spinner/timer.scss */
 .timer:not(:required) {
   border: 6px solid #cc88dd;
   -webkit-border-radius: 24px;
@@ -110,7 +99,6 @@ body {
   width: 48px;
   height: 48px;
 }
-/* line 36, ../../sass/spinner/timer.scss */
 .timer:not(:required)::before {
   -webkit-animation: timer 1250ms infinite linear;
   -moz-animation: timer 1250ms infinite linear;
@@ -136,7 +124,6 @@ body {
   left: 15px;
   top: 15px;
 }
-/* line 50, ../../sass/spinner/timer.scss */
 .timer:not(:required)::after {
   -webkit-animation: timer 15000ms infinite linear;
   -moz-animation: timer 15000ms infinite linear;

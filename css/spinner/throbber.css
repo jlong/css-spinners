@@ -1,73 +1,60 @@
 @-webkit-keyframes throbber {
-  /* line 10, ../../sass/spinner/throbber.scss */
   0% {
     background: #dde2e7;
   }
 
-  /* line 11, ../../sass/spinner/throbber.scss */
   10% {
     background: #6b9dc8;
   }
 
-  /* line 12, ../../sass/spinner/throbber.scss */
   40% {
     background: #dde2e7;
   }
 }
 
 @-moz-keyframes throbber {
-  /* line 10, ../../sass/spinner/throbber.scss */
   0% {
     background: #dde2e7;
   }
 
-  /* line 11, ../../sass/spinner/throbber.scss */
   10% {
     background: #6b9dc8;
   }
 
-  /* line 12, ../../sass/spinner/throbber.scss */
   40% {
     background: #dde2e7;
   }
 }
 
 @-o-keyframes throbber {
-  /* line 10, ../../sass/spinner/throbber.scss */
   0% {
     background: #dde2e7;
   }
 
-  /* line 11, ../../sass/spinner/throbber.scss */
   10% {
     background: #6b9dc8;
   }
 
-  /* line 12, ../../sass/spinner/throbber.scss */
   40% {
     background: #dde2e7;
   }
 }
 
 @keyframes throbber {
-  /* line 10, ../../sass/spinner/throbber.scss */
   0% {
     background: #dde2e7;
   }
 
-  /* line 11, ../../sass/spinner/throbber.scss */
   10% {
     background: #6b9dc8;
   }
 
-  /* line 12, ../../sass/spinner/throbber.scss */
   40% {
     background: #dde2e7;
   }
 }
 
 /* :not(:required) hides these rules from IE9 and below */
-/* line 16, ../../sass/spinner/throbber.scss */
 .throbber:not(:required) {
   -webkit-animation: throbber 2000ms 300ms infinite ease-out;
   -moz-animation: throbber 2000ms 300ms infinite ease-out;
@@ -82,7 +69,6 @@
   height: 1.5em;
   margin: 0 1.6em;
 }
-/* line 26, ../../sass/spinner/throbber.scss */
 .throbber:not(:required):before, .throbber:not(:required):after {
   background: #dde2e7;
   content: '\x200B';
@@ -92,7 +78,6 @@
   position: absolute;
   top: 0;
 }
-/* line 36, ../../sass/spinner/throbber.scss */
 .throbber:not(:required):before {
   -webkit-animation: throbber 2000ms 150ms infinite ease-out;
   -moz-animation: throbber 2000ms 150ms infinite ease-out;
@@ -101,7 +86,6 @@
   animation: throbber 2000ms 150ms infinite ease-out;
   left: -1.6em;
 }
-/* line 41, ../../sass/spinner/throbber.scss */
 .throbber:not(:required):after {
   -webkit-animation: throbber 2000ms 450ms infinite ease-out;
   -moz-animation: throbber 2000ms 450ms infinite ease-out;

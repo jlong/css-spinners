@@ -1,5 +1,4 @@
 @-webkit-keyframes spinner {
-  /* line 17, ../../sass/spinner/spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -8,7 +7,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 18, ../../sass/spinner/spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -19,7 +17,6 @@
 }
 
 @-moz-keyframes spinner {
-  /* line 17, ../../sass/spinner/spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -28,7 +25,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 18, ../../sass/spinner/spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -39,7 +35,6 @@
 }
 
 @-o-keyframes spinner {
-  /* line 17, ../../sass/spinner/spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -48,7 +43,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 18, ../../sass/spinner/spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -59,7 +53,6 @@
 }
 
 @keyframes spinner {
-  /* line 17, ../../sass/spinner/spinner.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -68,7 +61,6 @@
     transform: rotate(0deg);
   }
 
-  /* line 18, ../../sass/spinner/spinner.scss */
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -79,7 +71,6 @@
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-/* line 22, ../../sass/spinner/spinner.scss */
 .spinner:not(:required) {
   -webkit-animation: spinner 1500ms infinite linear;
   -moz-animation: spinner 1500ms infinite linear;

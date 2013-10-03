@@ -1,5 +1,4 @@
 @-webkit-keyframes gauge {
-  /* line 8, ../../sass/spinner/gauge.scss */
   0% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -8,7 +7,6 @@
     transform: rotate(-50deg);
   }
 
-  /* line 10, ../../sass/spinner/gauge.scss */
   10% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -17,7 +15,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 11, ../../sass/spinner/gauge.scss */
   20% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -26,7 +23,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 12, ../../sass/spinner/gauge.scss */
   24% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -35,7 +31,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 14, ../../sass/spinner/gauge.scss */
   40% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -44,7 +39,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 15, ../../sass/spinner/gauge.scss */
   54% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -53,7 +47,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 16, ../../sass/spinner/gauge.scss */
   56% {
     -webkit-transform: rotate(78deg);
     -moz-transform: rotate(78deg);
@@ -62,7 +55,6 @@
     transform: rotate(78deg);
   }
 
-  /* line 17, ../../sass/spinner/gauge.scss */
   58% {
     -webkit-transform: rotate(73deg);
     -moz-transform: rotate(73deg);
@@ -71,7 +63,6 @@
     transform: rotate(73deg);
   }
 
-  /* line 18, ../../sass/spinner/gauge.scss */
   60% {
     -webkit-transform: rotate(75deg);
     -moz-transform: rotate(75deg);
@@ -80,7 +71,6 @@
     transform: rotate(75deg);
   }
 
-  /* line 19, ../../sass/spinner/gauge.scss */
   62% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -89,7 +79,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 21, ../../sass/spinner/gauge.scss */
   70% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -98,7 +87,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 23, ../../sass/spinner/gauge.scss */
   80% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -107,7 +95,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 24, ../../sass/spinner/gauge.scss */
   83% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -116,7 +103,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 25, ../../sass/spinner/gauge.scss */
   86% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -125,7 +111,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 26, ../../sass/spinner/gauge.scss */
   89% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -134,7 +119,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 28, ../../sass/spinner/gauge.scss */
   100% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -145,7 +129,6 @@
 }
 
 @-moz-keyframes gauge {
-  /* line 8, ../../sass/spinner/gauge.scss */
   0% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -154,7 +137,6 @@
     transform: rotate(-50deg);
   }
 
-  /* line 10, ../../sass/spinner/gauge.scss */
   10% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -163,7 +145,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 11, ../../sass/spinner/gauge.scss */
   20% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -172,7 +153,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 12, ../../sass/spinner/gauge.scss */
   24% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -181,7 +161,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 14, ../../sass/spinner/gauge.scss */
   40% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -190,7 +169,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 15, ../../sass/spinner/gauge.scss */
   54% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -199,7 +177,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 16, ../../sass/spinner/gauge.scss */
   56% {
     -webkit-transform: rotate(78deg);
     -moz-transform: rotate(78deg);
@@ -208,7 +185,6 @@
     transform: rotate(78deg);
   }
 
-  /* line 17, ../../sass/spinner/gauge.scss */
   58% {
     -webkit-transform: rotate(73deg);
     -moz-transform: rotate(73deg);
@@ -217,7 +193,6 @@
     transform: rotate(73deg);
   }
 
-  /* line 18, ../../sass/spinner/gauge.scss */
   60% {
     -webkit-transform: rotate(75deg);
     -moz-transform: rotate(75deg);
@@ -226,7 +201,6 @@
     transform: rotate(75deg);
   }
 
-  /* line 19, ../../sass/spinner/gauge.scss */
   62% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -235,7 +209,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 21, ../../sass/spinner/gauge.scss */
   70% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -244,7 +217,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 23, ../../sass/spinner/gauge.scss */
   80% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -253,7 +225,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 24, ../../sass/spinner/gauge.scss */
   83% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -262,7 +233,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 25, ../../sass/spinner/gauge.scss */
   86% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -271,7 +241,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 26, ../../sass/spinner/gauge.scss */
   89% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -280,7 +249,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 28, ../../sass/spinner/gauge.scss */
   100% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -291,7 +259,6 @@
 }
 
 @-o-keyframes gauge {
-  /* line 8, ../../sass/spinner/gauge.scss */
   0% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -300,7 +267,6 @@
     transform: rotate(-50deg);
   }
 
-  /* line 10, ../../sass/spinner/gauge.scss */
   10% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -309,7 +275,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 11, ../../sass/spinner/gauge.scss */
   20% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -318,7 +283,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 12, ../../sass/spinner/gauge.scss */
   24% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -327,7 +291,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 14, ../../sass/spinner/gauge.scss */
   40% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -336,7 +299,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 15, ../../sass/spinner/gauge.scss */
   54% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -345,7 +307,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 16, ../../sass/spinner/gauge.scss */
   56% {
     -webkit-transform: rotate(78deg);
     -moz-transform: rotate(78deg);
@@ -354,7 +315,6 @@
     transform: rotate(78deg);
   }
 
-  /* line 17, ../../sass/spinner/gauge.scss */
   58% {
     -webkit-transform: rotate(73deg);
     -moz-transform: rotate(73deg);
@@ -363,7 +323,6 @@
     transform: rotate(73deg);
   }
 
-  /* line 18, ../../sass/spinner/gauge.scss */
   60% {
     -webkit-transform: rotate(75deg);
     -moz-transform: rotate(75deg);
@@ -372,7 +331,6 @@
     transform: rotate(75deg);
   }
 
-  /* line 19, ../../sass/spinner/gauge.scss */
   62% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -381,7 +339,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 21, ../../sass/spinner/gauge.scss */
   70% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -390,7 +347,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 23, ../../sass/spinner/gauge.scss */
   80% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -399,7 +355,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 24, ../../sass/spinner/gauge.scss */
   83% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -408,7 +363,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 25, ../../sass/spinner/gauge.scss */
   86% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -417,7 +371,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 26, ../../sass/spinner/gauge.scss */
   89% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -426,7 +379,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 28, ../../sass/spinner/gauge.scss */
   100% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -437,7 +389,6 @@
 }
 
 @keyframes gauge {
-  /* line 8, ../../sass/spinner/gauge.scss */
   0% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -446,7 +397,6 @@
     transform: rotate(-50deg);
   }
 
-  /* line 10, ../../sass/spinner/gauge.scss */
   10% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -455,7 +405,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 11, ../../sass/spinner/gauge.scss */
   20% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -464,7 +413,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 12, ../../sass/spinner/gauge.scss */
   24% {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -473,7 +421,6 @@
     transform: rotate(60deg);
   }
 
-  /* line 14, ../../sass/spinner/gauge.scss */
   40% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -482,7 +429,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 15, ../../sass/spinner/gauge.scss */
   54% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -491,7 +437,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 16, ../../sass/spinner/gauge.scss */
   56% {
     -webkit-transform: rotate(78deg);
     -moz-transform: rotate(78deg);
@@ -500,7 +445,6 @@
     transform: rotate(78deg);
   }
 
-  /* line 17, ../../sass/spinner/gauge.scss */
   58% {
     -webkit-transform: rotate(73deg);
     -moz-transform: rotate(73deg);
@@ -509,7 +453,6 @@
     transform: rotate(73deg);
   }
 
-  /* line 18, ../../sass/spinner/gauge.scss */
   60% {
     -webkit-transform: rotate(75deg);
     -moz-transform: rotate(75deg);
@@ -518,7 +461,6 @@
     transform: rotate(75deg);
   }
 
-  /* line 19, ../../sass/spinner/gauge.scss */
   62% {
     -webkit-transform: rotate(70deg);
     -moz-transform: rotate(70deg);
@@ -527,7 +469,6 @@
     transform: rotate(70deg);
   }
 
-  /* line 21, ../../sass/spinner/gauge.scss */
   70% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -536,7 +477,6 @@
     transform: rotate(-20deg);
   }
 
-  /* line 23, ../../sass/spinner/gauge.scss */
   80% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -545,7 +485,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 24, ../../sass/spinner/gauge.scss */
   83% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -554,7 +493,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 25, ../../sass/spinner/gauge.scss */
   86% {
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -563,7 +501,6 @@
     transform: rotate(20deg);
   }
 
-  /* line 26, ../../sass/spinner/gauge.scss */
   89% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
@@ -572,7 +509,6 @@
     transform: rotate(25deg);
   }
 
-  /* line 28, ../../sass/spinner/gauge.scss */
   100% {
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
@@ -583,14 +519,12 @@
 }
 
 /* Styles for old versions of IE */
-/* line 32, ../../sass/spinner/gauge.scss */
 .gauge {
   font-family: sans-serif;
   font-weight: 100;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-/* line 38, ../../sass/spinner/gauge.scss */
 .gauge:not(:required) {
   background: #66ccaa;
   -moz-border-radius-topleft: 32px;
@@ -606,7 +540,6 @@
   position: relative;
   text-indent: -9999px;
 }
-/* line 48, ../../sass/spinner/gauge.scss */
 .gauge:not(:required)::before {
   -webkit-animation: gauge 4000ms infinite ease;
   -moz-animation: gauge 4000ms infinite ease;
@@ -631,7 +564,6 @@
   -o-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
-/* line 61, ../../sass/spinner/gauge.scss */
 .gauge:not(:required)::after {
   content: '';
   background: white;

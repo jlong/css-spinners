@@ -1,12 +1,10 @@
 /* Styles for old versions of IE */
-/* line 8, ../../sass/spinner/heartbeat.scss */
 .heartbeat {
   font-family: sans-serif;
   font-weight: 100;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-/* line 14, ../../sass/spinner/heartbeat.scss */
 .heartbeat:not(:required) {
   -webkit-animation: heartbeat 1300ms ease 0s infinite normal;
   -moz-animation: heartbeat 1300ms ease 0s infinite normal;
@@ -30,13 +28,11 @@
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
-/* line 26, ../../sass/spinner/heartbeat.scss */
 .heartbeat:not(:required):after, .heartbeat:not(:required):before {
   position: absolute;
   content: "";
   background: #ee8877;
 }
-/* line 32, ../../sass/spinner/heartbeat.scss */
 .heartbeat:not(:required):before {
   -moz-border-radius-topleft: 12px;
   -webkit-border-top-left-radius: 12px;
@@ -49,7 +45,6 @@
   width: 36px;
   height: 24px;
 }
-/* line 40, ../../sass/spinner/heartbeat.scss */
 .heartbeat:not(:required):after {
   -moz-border-radius-topleft: 12px;
   -webkit-border-top-left-radius: 12px;
