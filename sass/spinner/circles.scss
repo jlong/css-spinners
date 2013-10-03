@@ -1,0 +1,63 @@
+@import "base";
+
+$circles-size: 50px;
+$circles-speed: 3s;
+$circles-colors: rgba(#fc3, 0.9) rgba(#f60, 0.6)  rgba(#f30, 0.4);
+
+$circles-radius: $circles-size / 4;
+$circles-diameter: $circles-size / 2;
+
+$circle-1: nth($circles-colors, 1);
+$circle-2: nth($circles-colors, 2);
+$circle-3: nth($circles-colors, 3);
+
+@include keyframes(circles) {
+  0%  { @include rotateZ(-2*360deg); }
+  50% { @include rotateZ(2*360deg); }
+}
+
+/* Styles for old versions of IE */
+.circles {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.circles:not(:required) {
+  position: relative;
+  text-indent: -9999px;
+
+  display: inline-block;
+  width: $circles-diameter;
+  height: $circles-diameter;
+
+  background: $circle-1;
+  border-radius: 100%;
+  
+  //@include box-shadow(white 0 -($circles-segment/2) 0 0 inset);
+  
+  &::before {
+    background: $circle-2;
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    width: $circles-diameter;
+    height: $circles-diameter;
+    top: $circles-radius + ($circles-radius * sin(30deg));
+    left: -$circles-radius * cos(30deg);
+  }
+  
+  &::after {
+    background: $circle-3;
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    width: $circles-diameter;
+    height: $circles-diameter;
+    top: $circles-radius + ($circles-radius * sin(30deg));
+    left: $circles-radius * cos(30deg);
+  }
+  
+  @include animation(circles $circles-speed infinite ease-in-out);
+  @include transform-origin(50%, 100%);
+}

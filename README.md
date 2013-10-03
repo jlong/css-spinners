@@ -83,5 +83,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.dots</td>
       <td>Almost a rotating shell game. With dots!</td>
     </tr>
+    <tr>
+      <td>.circles</td>
+      <td>Three rotating multi-colored circles.</td>
+    </tr>
   </tbody>
 </table>

@@ -1,0 +1,118 @@
+@-webkit-keyframes circles {
+  0% {
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+@-moz-keyframes circles {
+  0% {
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+@-o-keyframes circles {
+  0% {
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes circles {
+  0% {
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
+    transform: rotate(-720deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(720deg);
+    -moz-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+    -o-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+/* Styles for old versions of IE */
+.circles {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.circles:not(:required) {
+  position: relative;
+  text-indent: -9999px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 204, 51, 0.9);
+  border-radius: 100%;
+  -webkit-animation: circles 3s infinite ease-in-out;
+  -moz-animation: circles 3s infinite ease-in-out;
+  -ms-animation: circles 3s infinite ease-in-out;
+  -o-animation: circles 3s infinite ease-in-out;
+  animation: circles 3s infinite ease-in-out;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.circles:not(:required)::before {
+  background: rgba(255, 102, 0, 0.6);
+  border-radius: 100%;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 18.75px;
+  left: -10.82532px;
+}
+.circles:not(:required)::after {
+  background: rgba(255, 51, 0, 0.4);
+  border-radius: 100%;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 18.75px;
+  left: 10.82532px;
+}
