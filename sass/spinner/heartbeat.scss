@@ -10,6 +10,14 @@ $heartbeat-rotation: rotate(45deg);
   font-weight: 100;
 }
 
+@include keyframes(heartbeat) {
+  0%  { @include transform($heartbeat-rotation scale(1));   }
+  14% { @include transform($heartbeat-rotation scale(1.3)); }
+  28% { @include transform($heartbeat-rotation scale(1));   }
+  42% { @include transform($heartbeat-rotation scale(1.3)); }
+  70% { @include transform($heartbeat-rotation scale(1));   }
+}
+
 /* :not(:required) hides this rule from IE9 and below */
 .heartbeat:not(:required) {
   @include animation(heartbeat 1300ms ease 0s infinite normal);
