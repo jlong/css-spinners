@@ -79,5 +79,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.flower</td>
       <td>An animated spinning flower.</td>
     </tr>
+    <tr>
+      <td>.dots</td>
+      <td>Almost a rotating shell game. With dots!</td>
+    </tr>
   </tbody>
 </table>

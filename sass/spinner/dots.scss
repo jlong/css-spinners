@@ -1,0 +1,167 @@
+@import "base";
+
+$dots-size: 49px;
+$dots-colors: #f86 #fc6 #6d7 #4ae;
+$dots-speed: 5s;
+
+$dot-1: nth($dots-colors, 1);
+$dot-2: nth($dots-colors, 2);
+$dot-3: nth($dots-colors, 3);
+$dot-4: nth($dots-colors, 4);
+
+$dots-segment: $dots-size / 7;
+$dots-dot-size: $dots-segment * 3;
+
+$dot-position-1: (-2 * $dots-segment) (-2 * $dots-segment);
+$dot-position-2: ( 2 * $dots-segment) (-2 * $dots-segment);
+$dot-position-3: ( 2 * $dots-segment) ( 2 * $dots-segment);
+$dot-position-4: (-2 * $dots-segment) ( 2 * $dots-segment);
+
+@include keyframes(dots) {
+  0%   {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-1 0 $dots-segment,
+      $dot-2 $dot-position-2 0 $dots-segment,
+      $dot-3 $dot-position-3 0 $dots-segment,
+      $dot-4 $dot-position-4 0 $dots-segment
+    );
+  }
+  8.33% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-2 0 $dots-segment,
+      $dot-2 $dot-position-2 0 $dots-segment,
+      $dot-3 $dot-position-3 0 $dots-segment,
+      $dot-4 $dot-position-4 0 $dots-segment
+    );
+  }
+  16.67% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-3 0 $dots-segment,
+      $dot-2 $dot-position-3 0 $dots-segment,
+      $dot-3 $dot-position-3 0 $dots-segment,
+      $dot-4 $dot-position-4 0 $dots-segment
+    );
+  }
+  25% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-4 0 $dots-segment,
+      $dot-2 $dot-position-4 0 $dots-segment,
+      $dot-3 $dot-position-4 0 $dots-segment,
+      $dot-4 $dot-position-4 0 $dots-segment
+    );
+  }
+  33.33% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-1 0 $dots-segment,
+      $dot-2 $dot-position-4 0 $dots-segment,
+      $dot-3 $dot-position-1 0 $dots-segment,
+      $dot-4 $dot-position-1 0 $dots-segment
+    );
+  }
+  41.67% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-2 0 $dots-segment,
+      $dot-2 $dot-position-4 0 $dots-segment,
+      $dot-3 $dot-position-1 0 $dots-segment,
+      $dot-4 $dot-position-2 0 $dots-segment
+    );
+  }
+  50% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-3 0 $dots-segment,
+      $dot-2 $dot-position-4 0 $dots-segment,
+      $dot-3 $dot-position-1 0 $dots-segment,
+      $dot-4 $dot-position-2 0 $dots-segment
+    );
+  }
+  58.33% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-4 0 $dots-segment,
+      $dot-2 $dot-position-4 0 $dots-segment,
+      $dot-3 $dot-position-1 0 $dots-segment,
+      $dot-4 $dot-position-2 0 $dots-segment
+    );
+  }
+  66.67% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-1 0 $dots-segment,
+      $dot-2 $dot-position-1 0 $dots-segment,
+      $dot-3 $dot-position-1 0 $dots-segment,
+      $dot-4 $dot-position-2 0 $dots-segment
+    );
+  }
+  75% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-2 0 $dots-segment,
+      $dot-2 $dot-position-2 0 $dots-segment,
+      $dot-3 $dot-position-2 0 $dots-segment,
+      $dot-4 $dot-position-2 0 $dots-segment
+    );
+  }
+  83.33% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-3 0 $dots-segment,
+      $dot-2 $dot-position-2 0 $dots-segment,
+      $dot-3 $dot-position-3 0 $dots-segment,
+      $dot-4 $dot-position-3 0 $dots-segment
+    );
+  }
+  91.67% {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-4 0 $dots-segment,
+      $dot-2 $dot-position-2 0 $dots-segment,
+      $dot-3 $dot-position-3 0 $dots-segment,
+      $dot-4 $dot-position-4 0 $dots-segment
+    );
+  }
+  100%   {
+    @include box-shadow(
+      white 0 0 15px 0,
+      $dot-1 $dot-position-1 0 $dots-segment,
+      $dot-2 $dot-position-2 0 $dots-segment,
+      $dot-3 $dot-position-3 0 $dots-segment,
+      $dot-4 $dot-position-4 0 $dots-segment
+    );
+  }
+}
+
+/* Styles for old versions of IE */
+.dots {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.dots:not(:required) {
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+
+  display: inline-block;
+  width: $dots-segment;
+  height: $dots-segment;
+
+  background: transparent;
+  border-radius: 100%;
+  @include box-shadow(
+    $dot-1 $dot-position-1 0 $dots-segment,
+    $dot-2 $dot-position-2 0 $dots-segment,
+    $dot-3 $dot-position-3 0 $dots-segment,
+    $dot-4 $dot-position-4 0 $dots-segment
+  );
+
+  @include animation(dots $dots-speed infinite ease-in-out);
+  @include transform-origin(50%, 50%);
+}
