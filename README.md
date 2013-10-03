@@ -75,5 +75,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.whirly</td>
       <td>A comet-like rotating spinner.</td>
     </tr>
+    <tr>
+      <td>.flower</td>
+      <td>An animated spinning flower.</td>
+    </tr>
   </tbody>
 </table>
