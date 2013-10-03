@@ -1,0 +1,35 @@
+@import "base";
+
+$three-quarters-size: 32px;
+$three-quarters-color: #38e;
+
+@include keyframes(three-quarters) {
+  0%   { @include rotateZ(0deg); }
+  100% { @include rotateZ(360deg); }
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Styles for old versions of IE */
+.three-quarters {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.three-quarters:not(:required) {
+  @include animation(three-quarters 1250ms infinite linear);
+  border: ($three-quarters-size/4) solid $three-quarters-color;
+  border-right-color: transparent;
+  border-radius: ($three-quarters-size / 2);
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: $three-quarters-size;
+  height: $three-quarters-size;
+}

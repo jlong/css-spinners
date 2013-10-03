@@ -60,8 +60,8 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>Animated speedometer-like gauge with rotating needle.</td>
     </tr>
     <tr>
-      <td>.timer</td>
-      <td>Animated clock with spinning hands.</td>
+      <td>.three-quarters</td>
+      <td>Minimal three-quarters donut spinner.</td>
     </tr>
   </tbody>
 </table>
