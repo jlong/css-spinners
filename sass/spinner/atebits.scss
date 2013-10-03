@@ -1,0 +1,73 @@
+@import "base";
+
+$atebits-size: 33px;
+$atebits-color: rgba(black, 0.5);
+$atebits-speed: 8s;
+
+$atebits-segment: $atebits-size / 11;
+
+@include keyframes(atebits) {
+  0%    { @include rotateZ(0deg); }
+
+  3%    { @include rotateZ(90deg); }
+  10%   { @include rotateZ(90deg); }
+
+  13%   { @include rotateZ(180deg); }
+  20%   { @include rotateZ(180deg); }
+
+  23%   { @include rotateZ(90deg); }
+  30%   { @include rotateZ(90deg); }
+
+  33%   { @include rotateZ(180deg); }
+  40%   { @include rotateZ(180deg); }
+
+  43%   { @include rotateZ(270deg); }
+  50%   { @include rotateZ(270deg); }
+
+  53%   { @include rotateZ(180deg); }
+  60%   { @include rotateZ(180deg); }
+
+  63%   { @include rotateZ(90deg); }
+  70%   { @include rotateZ(90deg); }
+
+  73%   { @include rotateZ(0deg); }
+  80%   { @include rotateZ(0deg); }
+
+  83%   { @include rotateZ(-90deg); }
+  90%   { @include rotateZ(-90deg); }
+
+  93%   { @include rotateZ(0deg); }
+}
+
+/* Styles for old versions of IE */
+.atebits {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.atebits:not(:required) {
+  background: $atebits-color;
+  display: inline-block;
+  width: $atebits-segment * 3;
+  height: $atebits-segment * 3;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+
+  @include box-shadow(
+    $atebits-color (-4 * $atebits-segment) (-4 * $atebits-segment) 0 0,
+    $atebits-color ( 4 * $atebits-segment) (-4 * $atebits-segment) 0 0,
+
+    $atebits-color (-4 * $atebits-segment) 0                       0 0,
+    $atebits-color ( 4 * $atebits-segment) 0                       0 0,
+
+    $atebits-color (-4 * $atebits-segment) ( 4 * $atebits-segment) 0 0,
+    $atebits-color 0                       ( 4 * $atebits-segment) 0 0,
+    $atebits-color ( 4 * $atebits-segment) ( 4 * $atebits-segment) 0 0
+  );
+
+  @include animation(atebits $atebits-speed infinite ease-in-out);
+  @include transform-origin(50%, 50%);
+}
+
