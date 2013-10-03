@@ -1,0 +1,63 @@
+@import "base";
+
+$timer-size: 48px;
+$timer-speed: 1250ms;
+$timer-color: #c8d;
+$timer-border-width: $timer-size / 8;
+
+@include keyframes(timer) {
+  0%   { @include rotateZ(0deg); }
+  100% { @include rotateZ(360deg); }
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Styles for old versions of IE */
+.timer {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.timer:not(:required) {
+  border: $timer-border-width solid $timer-color;
+  @include border-radius($timer-size / 2);
+  @include box-sizing(border-box);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+  width: $timer-size;
+  height: $timer-size;
+  
+  &::before {
+    @include animation(timer $timer-speed infinite linear);
+    @include transform-origin($timer-size / 16, $timer-size / 16);
+    background: $timer-color;
+    @include border-radius($timer-size / 16);
+    content: '';
+    display: block;
+    position: absolute;
+    width: ($timer-size / 8);
+    height: (2 * $timer-size / 5);
+    left: ($timer-size / 2) - ($timer-size / 16) - $timer-border-width;
+    top: ($timer-size / 2) - ($timer-size / 16) - $timer-border-width;
+  }
+  
+  &::after {
+    @include animation(timer (12 * $timer-speed) infinite linear);
+    @include transform-origin($timer-size / 16, $timer-size / 16);
+    background: $timer-color;
+    @include border-radius($timer-size / 16);
+    content: '';
+    display: block;
+    position: absolute;
+    width: ($timer-size / 8);
+    height: ($timer-size / 3);
+    left: ($timer-size / 2) - ($timer-size / 16) - $timer-border-width;
+    top: ($timer-size / 2) - ($timer-size / 16) - $timer-border-width;
+  }
+}
