@@ -137,12 +137,6 @@ $dot-position-4: (-2 * $dots-segment) ( 2 * $dots-segment);
   }
 }
 
-/* Styles for old versions of IE */
-.dots {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
 .dots:not(:required) {
   overflow: hidden;

@@ -4,12 +4,6 @@ $heartbeat-color: #e87;
 $heartbeat-size: 36px; // must be divisible by 2 and 3
 $heartbeat-rotation: rotate(45deg);
 
-/* Styles for old versions of IE */
-.heartbeat {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 @include keyframes(heartbeat) {
   0%  { @include transform($heartbeat-rotation scale(1));   }
   14% { @include transform($heartbeat-rotation scale(1.3)); }

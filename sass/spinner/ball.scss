@@ -72,12 +72,6 @@ $ball-diameter: $ball-size / 4;
   }
 }
 
-/* Styles for old versions of IE */
-.ball {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
 .ball:not(:required) {
   position: relative;

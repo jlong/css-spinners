@@ -33,12 +33,6 @@ $flower-dot-size: $flower-segment * 4;
   }
 }
 
-/* Styles for old versions of IE */
-.flower {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
 .flower:not(:required) {
   overflow: hidden;

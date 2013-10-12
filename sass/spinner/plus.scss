@@ -149,12 +149,6 @@ $plus-color-4: nth($plus-colors, 4);
   }
 }
 
-/* Styles for old versions of IE */
-.plus {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
 .plus:not(:required) {
   overflow: hidden;

@@ -10,12 +10,6 @@ $timer-border-width: $timer-size / 8;
   100% { @include rotateZ(360deg); }
 }
 
-/* Styles for old versions of IE */
-.timer {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
 .timer:not(:required) {
   border: $timer-border-width solid $timer-color;
