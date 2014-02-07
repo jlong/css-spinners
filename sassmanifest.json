@@ -1,5 +1,5 @@
 {
-  "name": "CSS Spinners",
+  "name": "css-spinners",
   "version": "1.0.1",
   "description" : "Simple CSS spinners and throbbers made with Sass and minimal HTML markup.",
   "tags": ["spinners", "throbbers", "animated"],
