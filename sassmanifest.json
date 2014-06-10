@@ -1,8 +1,0 @@
-{
-  "name": "CSS Spinners",
-  "version": "1.0.1",
-  "description" : "Simple CSS spinners and throbbers made with Sass and minimal HTML markup.",
-  "tags": ["spinners", "throbbers", "animated"],
-  "supports": ">= 3.0",
-  "homepage_url": "http://css-spinners.com"
-}

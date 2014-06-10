@@ -1,6 +1,6 @@
 @import "base";
 
-$spinner-color: rgba(#003, 0.3);
+$spinner-color: rgba(#003, 0.3) !default;
 
 @include keyframes(spinner) {
   0%   { @include rotateZ(0deg); }
@@ -19,7 +19,7 @@ $spinner-color: rgba(#003, 0.3);
     $spinner-color -1.5em 0 0 0,
     $spinner-color -1.1em -1.1em 0 0,
     $spinner-color 0 -1.5em 0 0,
-    $spinner-color 1.1em -1.1em 0 0  
+    $spinner-color 1.1em -1.1em 0 0
   );
   display: inline-block;
   font-size: 10px;
