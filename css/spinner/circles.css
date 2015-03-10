@@ -1,52 +1,34 @@
 @-webkit-keyframes circles {
   0% {
     -webkit-transform: rotate(-720deg);
-    -moz-transform: rotate(-720deg);
-    -ms-transform: rotate(-720deg);
-    -o-transform: rotate(-720deg);
     transform: rotate(-720deg);
   }
 
   50% {
     -webkit-transform: rotate(720deg);
-    -moz-transform: rotate(720deg);
-    -ms-transform: rotate(720deg);
-    -o-transform: rotate(720deg);
     transform: rotate(720deg);
   }
 }
 
 @-moz-keyframes circles {
   0% {
-    -webkit-transform: rotate(-720deg);
     -moz-transform: rotate(-720deg);
-    -ms-transform: rotate(-720deg);
-    -o-transform: rotate(-720deg);
     transform: rotate(-720deg);
   }
 
   50% {
-    -webkit-transform: rotate(720deg);
     -moz-transform: rotate(720deg);
-    -ms-transform: rotate(720deg);
-    -o-transform: rotate(720deg);
     transform: rotate(720deg);
   }
 }
 
 @-o-keyframes circles {
   0% {
-    -webkit-transform: rotate(-720deg);
-    -moz-transform: rotate(-720deg);
-    -ms-transform: rotate(-720deg);
     -o-transform: rotate(-720deg);
     transform: rotate(-720deg);
   }
 
   50% {
-    -webkit-transform: rotate(720deg);
-    -moz-transform: rotate(720deg);
-    -ms-transform: rotate(720deg);
     -o-transform: rotate(720deg);
     transform: rotate(720deg);
   }
