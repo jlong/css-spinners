@@ -1,91 +1,45 @@
+@-moz-keyframes timer {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 @-webkit-keyframes timer {
   0% {
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
-@-moz-keyframes timer {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-o-keyframes timer {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes timer {
   0% {
-    -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
-    -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
-/* Styles for old versions of IE */
-.timer {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
 .timer:not(:required) {
-  border: 6px solid #cc88dd;
-  -webkit-border-radius: 24px;
+  border: 6px solid #c8d;
   -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  -o-border-radius: 24px;
+  -webkit-border-radius: 24px;
   border-radius: 24px;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
@@ -95,21 +49,16 @@
   height: 48px;
 }
 .timer:not(:required)::before {
-  -webkit-animation: timer 1250ms infinite linear;
   -moz-animation: timer 1250ms infinite linear;
-  -ms-animation: timer 1250ms infinite linear;
-  -o-animation: timer 1250ms infinite linear;
+  -webkit-animation: timer 1250ms infinite linear;
   animation: timer 1250ms infinite linear;
-  -webkit-transform-origin: 3px 3px;
   -moz-transform-origin: 3px 3px;
   -ms-transform-origin: 3px 3px;
-  -o-transform-origin: 3px 3px;
+  -webkit-transform-origin: 3px 3px;
   transform-origin: 3px 3px;
-  background: #cc88dd;
-  -webkit-border-radius: 3px;
+  background: #c8d;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   content: '';
   display: block;
@@ -120,21 +69,16 @@
   top: 15px;
 }
 .timer:not(:required)::after {
-  -webkit-animation: timer 15000ms infinite linear;
   -moz-animation: timer 15000ms infinite linear;
-  -ms-animation: timer 15000ms infinite linear;
-  -o-animation: timer 15000ms infinite linear;
+  -webkit-animation: timer 15000ms infinite linear;
   animation: timer 15000ms infinite linear;
-  -webkit-transform-origin: 3px 3px;
   -moz-transform-origin: 3px 3px;
   -ms-transform-origin: 3px 3px;
-  -o-transform-origin: 3px 3px;
+  -webkit-transform-origin: 3px 3px;
   transform-origin: 3px 3px;
-  background: #cc88dd;
-  -webkit-border-radius: 3px;
+  background: #c8d;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   content: '';
   display: block;
