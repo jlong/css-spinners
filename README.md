@@ -95,5 +95,13 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.ball</td>
       <td>A bouncing ball.</td>
     </tr>
+    <tr>
+      <td>.sixdots-dark</td>
+      <td>One dot travels a hexagon, eating and replacing dots. Stands out on lighter backgrounds.</td>
+    </tr>
+    <tr>
+      <td>.sixdots-light</td>
+      <td>One dot travels a hexagon, eating and replacing dots. Stands out on darker backgrounds.</td>
+    </tr>
   </tbody>
 </table>
