@@ -1,70 +1,46 @@
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 @-moz-keyframes spinner {
   0% {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -moz-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
-@-o-keyframes spinner {
-  0% {
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spinner {
+@-webkit-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
+@keyframes spinner {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 /* :not(:required) hides this rule from IE9 and below */
 .refreshing:not(:required) {
-  -webkit-animation: spinner 1000ms infinite linear;
   -moz-animation: spinner 1000ms infinite linear;
-  -ms-animation: spinner 1000ms infinite linear;
-  -o-animation: spinner 1000ms infinite linear;
+  -webkit-animation: spinner 1000ms infinite linear;
   animation: spinner 1000ms infinite linear;
-  -webkit-border-radius: 2.4em;
   -moz-border-radius: 2.4em;
-  -ms-border-radius: 2.4em;
-  -o-border-radius: 2.4em;
+  -webkit-border-radius: 2.4em;
   border-radius: 2.4em;
-  border: 0.4em solid #99aacc;
+  border: 0.4em solid #9ac;
   border-left-color: transparent;
   color: transparent;
   display: inline-block;
@@ -77,8 +53,8 @@
 .refreshing:not(:required):after {
   display: block;
   border: 0.5em solid transparent;
-  border-top-color: #99aacc;
-  border-left-color: #99aacc;
+  border-top-color: #9ac;
+  border-left-color: #9ac;
   content: '';
   width: 0;
   height: 0;
