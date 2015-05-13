@@ -3,6 +3,8 @@ Spinner.css
 
 Simple CSS loading indicators made with CSS and minimal HTML markup.
 
+![screenshot](http://f.cl.ly/items/0C410U1l3E0G173b0x3E/css-spinners.png)
+
 Markup
 ------
 
