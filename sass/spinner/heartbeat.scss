@@ -1,15 +1,15 @@
 @import "base";
 
-$heartbeat-color: #e87;
-$heartbeat-size: 36px; // must be divisible by 2 and 3
-$heartbeat-rotation: rotate(45deg);
+$heartbeat-loader-color: #e87;
+$heartbeat-loader-size: 36px; // must be divisible by 2 and 3
+$heartbeat-loader-rotation: rotate(45deg);
 
 @include keyframes(heartbeat-loader) {
-  0%  { @include transform($heartbeat-rotation scale(1));   }
-  14% { @include transform($heartbeat-rotation scale(1.3)); }
-  28% { @include transform($heartbeat-rotation scale(1));   }
-  42% { @include transform($heartbeat-rotation scale(1.3)); }
-  70% { @include transform($heartbeat-rotation scale(1));   }
+  0%  { @include transform($heartbeat-loader-rotation scale(1));   }
+  14% { @include transform($heartbeat-loader-rotation scale(1.3)); }
+  28% { @include transform($heartbeat-loader-rotation scale(1));   }
+  42% { @include transform($heartbeat-loader-rotation scale(1.3)); }
+  70% { @include transform($heartbeat-loader-rotation scale(1));   }
 }
 
 /* :not(:required) hides this rule from IE9 and below */
@@ -20,30 +20,30 @@ $heartbeat-rotation: rotate(45deg);
   position: relative;  
   overflow: hidden;
   text-indent: -9999px;
-  width: $heartbeat-size;  
-  height: $heartbeat-size;
-  @include transform($heartbeat-rotation scale(1));
+  width: $heartbeat-loader-size;  
+  height: $heartbeat-loader-size;
+  @include transform($heartbeat-loader-rotation scale(1));
   @include transform-origin(50%, 50%);
   
   &:after, &:before {
     position: absolute;
     content: "";  
-    background: $heartbeat-color;
+    background: $heartbeat-loader-color;
   }
   
   &:before {
-    @include border-left-radius($heartbeat-size / 3);
-    top: ($heartbeat-size/3);
+    @include border-left-radius($heartbeat-loader-size / 3);
+    top: ($heartbeat-loader-size/3);
     left: 0;
-    width: $heartbeat-size;
-    height: (2 * $heartbeat-size / 3);
+    width: $heartbeat-loader-size;
+    height: (2 * $heartbeat-loader-size / 3);
   }
   
   &:after {
-    @include border-top-radius($heartbeat-size / 3);
+    @include border-top-radius($heartbeat-loader-size / 3);
     top: 0;
-    left: ($heartbeat-size / 3);
-    width: (2 * $heartbeat-size / 3);
-    height: ($heartbeat-size / 3);
+    left: ($heartbeat-loader-size / 3);
+    width: (2 * $heartbeat-loader-size / 3);
+    height: ($heartbeat-loader-size / 3);
   }
 } 

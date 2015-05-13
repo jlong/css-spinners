@@ -1,10 +1,10 @@
 @import "base";
 
-$atebits-size: 33px;
-$atebits-color: rgba(black, 0.5);
-$atebits-speed: 8s;
+$atebits-loader-size: 33px;
+$atebits-loader-color: rgba(black, 0.5);
+$atebits-loader-speed: 8s;
 
-$atebits-segment: $atebits-size / 11;
+$atebits-loader-segment: $atebits-loader-size / 11;
 
 @include keyframes(atebits-loader) {
   0%    { @include rotateZ(0deg); }
@@ -41,27 +41,26 @@ $atebits-segment: $atebits-size / 11;
 
 /* :not(:required) hides this rule from IE9 and below */
 .atebits-loader:not(:required) {
-  background: $atebits-color;
+  background: $atebits-loader-color;
   display: inline-block;
-  width: $atebits-segment * 3;
-  height: $atebits-segment * 3;
+  width: $atebits-loader-segment * 3;
+  height: $atebits-loader-segment * 3;
   overflow: hidden;
   position: relative;
   text-indent: -9999px;
 
   @include box-shadow(
-    $atebits-color (-4 * $atebits-segment) (-4 * $atebits-segment) 0 0,
-    $atebits-color ( 4 * $atebits-segment) (-4 * $atebits-segment) 0 0,
+    $atebits-loader-color (-4 * $atebits-loader-segment) (-4 * $atebits-loader-segment) 0 0,
+    $atebits-loader-color ( 4 * $atebits-loader-segment) (-4 * $atebits-loader-segment) 0 0,
 
-    $atebits-color (-4 * $atebits-segment) 0                       0 0,
-    $atebits-color ( 4 * $atebits-segment) 0                       0 0,
+    $atebits-loader-color (-4 * $atebits-loader-segment) 0                              0 0,
+    $atebits-loader-color ( 4 * $atebits-loader-segment) 0                              0 0,
 
-    $atebits-color (-4 * $atebits-segment) ( 4 * $atebits-segment) 0 0,
-    $atebits-color 0                       ( 4 * $atebits-segment) 0 0,
-    $atebits-color ( 4 * $atebits-segment) ( 4 * $atebits-segment) 0 0
+    $atebits-loader-color (-4 * $atebits-loader-segment) ( 4 * $atebits-loader-segment) 0 0,
+    $atebits-loader-color 0                              ( 4 * $atebits-loader-segment) 0 0,
+    $atebits-loader-color ( 4 * $atebits-loader-segment) ( 4 * $atebits-loader-segment) 0 0
   );
 
-  @include animation(atebits-loader $atebits-speed infinite ease-in-out);
+  @include animation(atebits-loader $atebits-loader-speed infinite ease-in-out);
   @include transform-origin(50%, 50%);
 }
-

@@ -1,7 +1,7 @@
 @import "base";
 
-$three-quarters-size: 32px;
-$three-quarters-color: #38e;
+$three-quarters-loader-size: 32px;
+$three-quarters-loader-color: #38e;
 
 @include keyframes(three-quarters-loader) {
   0%   { @include rotateZ(0deg); }
@@ -11,14 +11,14 @@ $three-quarters-color: #38e;
 /* :not(:required) hides this rule from IE9 and below */
 .three-quarters-loader:not(:required) {
   @include animation(three-quarters-loader 1250ms infinite linear);
-  border: ($three-quarters-size/4) solid $three-quarters-color;
+  border: ($three-quarters-loader-size/4) solid $three-quarters-loader-color;
   border-right-color: transparent;
-  border-radius: ($three-quarters-size / 2);
+  border-radius: ($three-quarters-loader-size / 2);
   box-sizing: border-box;
   display: inline-block;
   position: relative;
   overflow: hidden;
   text-indent: -9999px;
-  width: $three-quarters-size;
-  height: $three-quarters-size;
+  width: $three-quarters-loader-size;
+  height: $three-quarters-loader-size;
 }

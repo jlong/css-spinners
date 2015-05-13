@@ -1,74 +1,74 @@
 @import "base";
 
-$wobblebar-size: 128px;
-$wobblebar-speed: 15000ms;
-$wobblebar-color: #a9d;
+$wobblebar-loader-size: 128px;
+$wobblebar-loader-speed: 15000ms;
+$wobblebar-loader-color: #a9d;
 
 @include keyframes(wobblebar-loader) {
-  0%  { left: ($wobblebar-size / 32); }
-  3%  { left: (26 * $wobblebar-size / 32); }
+  0%  { left: ($wobblebar-loader-size / 32); }
+  3%  { left: (26 * $wobblebar-loader-size / 32); }
   
-  6% { left: ($wobblebar-size / 32); }
-  9% { left: (26 * $wobblebar-size / 32); }
+  6% { left: ($wobblebar-loader-size / 32); }
+  9% { left: (26 * $wobblebar-loader-size / 32); }
   
-  12% { left: ($wobblebar-size / 32); }
-  15% { left: (26 * $wobblebar-size / 32); }
+  12% { left: ($wobblebar-loader-size / 32); }
+  15% { left: (26 * $wobblebar-loader-size / 32); }
 
-  18% { left: (8 * $wobblebar-size / 32); }
+  18% { left: (8 * $wobblebar-loader-size / 32); }
   
-  27% { left: (8 * $wobblebar-size / 32); }
-  30% { left: (26 * $wobblebar-size / 32); }
+  27% { left: (8 * $wobblebar-loader-size / 32); }
+  30% { left: (26 * $wobblebar-loader-size / 32); }
   
   
-  33%  { left: ($wobblebar-size / 32); }
-  36%  { left: (26 * $wobblebar-size / 32); }
+  33%  { left: ($wobblebar-loader-size / 32); }
+  36%  { left: (26 * $wobblebar-loader-size / 32); }
   
-  39% { left: ($wobblebar-size / 32); }
-  42% { left: (26 * $wobblebar-size / 32); }
+  39% { left: ($wobblebar-loader-size / 32); }
+  42% { left: (26 * $wobblebar-loader-size / 32); }
   
-  45% { left: ($wobblebar-size / 32); }
-  48% { left: (26 * $wobblebar-size / 32); }
+  45% { left: ($wobblebar-loader-size / 32); }
+  48% { left: (26 * $wobblebar-loader-size / 32); }
 
-  51% { left: (13 * $wobblebar-size / 32); }
+  51% { left: (13 * $wobblebar-loader-size / 32); }
   
-  63% { left: (13 * $wobblebar-size / 32); }
+  63% { left: (13 * $wobblebar-loader-size / 32); }
   
-  66%  { left: ($wobblebar-size / 32); }
-  69%  { left: (26 * $wobblebar-size / 32); }
+  66%  { left: ($wobblebar-loader-size / 32); }
+  69%  { left: (26 * $wobblebar-loader-size / 32); }
   
-  72% { left: ($wobblebar-size / 32); }
-  75% { left: (26 * $wobblebar-size / 32); }
+  72% { left: ($wobblebar-loader-size / 32); }
+  75% { left: (26 * $wobblebar-loader-size / 32); }
   
-  78% { left: ($wobblebar-size / 32); }
-  81% { left: (26 * $wobblebar-size / 32); }
+  78% { left: ($wobblebar-loader-size / 32); }
+  81% { left: (26 * $wobblebar-loader-size / 32); }
 
-  84% { left: (18 * $wobblebar-size / 32); }
+  84% { left: (18 * $wobblebar-loader-size / 32); }
   
-  94% { left: (18 * $wobblebar-size / 32); }
-  97% { left: (26 * $wobblebar-size / 32); }
+  94% { left: (18 * $wobblebar-loader-size / 32); }
+  97% { left: (26 * $wobblebar-loader-size / 32); }
 }
 
 /* :not(:required) hides this rule from IE9 and below */
 .wobblebar-loader:not(:required) {
-  background: $wobblebar-color;
-  @include border-radius($wobblebar-size / 12);
+  background: $wobblebar-loader-color;
+  @include border-radius($wobblebar-loader-size / 12);
   display: inline-block;
   overflow: hidden;
   text-indent: -9999px;
-  width: $wobblebar-size;
-  height: ($wobblebar-size / 6);
+  width: $wobblebar-loader-size;
+  height: ($wobblebar-loader-size / 6);
   position: relative;
   
   &::after {
-    @include animation(wobblebar-loader $wobblebar-speed infinite ease);
+    @include animation(wobblebar-loader $wobblebar-loader-speed infinite ease);
     background: white;
     display: block;
-    @include border-radius(2 * $wobblebar-size / 36);
+    @include border-radius(2 * $wobblebar-loader-size / 36);
     content: '';
     position: absolute;
-    top: ($wobblebar-size / 36);
-    left: ($wobblebar-size / 32);
-    width: ($wobblebar-size / 6);
-    height: (4 * $wobblebar-size / 36);
+    top: ($wobblebar-loader-size / 36);
+    left: ($wobblebar-loader-size / 32);
+    width: ($wobblebar-loader-size / 6);
+    height: (4 * $wobblebar-loader-size / 36);
   }
 }

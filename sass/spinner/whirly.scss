@@ -1,11 +1,11 @@
 @import "base";
 
-$whirly-size: 64px;
-$whirly-color: #e66;
-$whirly-speed: 1.25s;
+$whirly-loader-size: 64px;
+$whirly-loader-color: #e66;
+$whirly-loader-speed: 1.25s;
 
-$whirly-radius: $whirly-size / 2;
-$whirly-dot-size: $whirly-size / 8;
+$whirly-loader-radius: $whirly-loader-size / 2;
+$whirly-loader-dot-size: $whirly-loader-size / 8;
 
 @include keyframes(whirly-loader) {
   0%   { @include rotateZ(0deg); }
@@ -19,8 +19,8 @@ $whirly-dot-size: $whirly-size / 8;
   text-indent: -9999px;
   
   display: inline-block;
-  width: $whirly-dot-size;
-  height: $whirly-dot-size;
+  width: $whirly-loader-dot-size;
+  height: $whirly-loader-dot-size;
   
   background: transparent;
   @include border-radius(100%);
@@ -30,15 +30,15 @@ $whirly-dot-size: $whirly-size / 8;
   
   @while $angle < 360deg {
     $size: (18px - ($angle / 10deg * 1px)) / 3;
-    $radius: $whirly-radius - $size;
+    $radius: $whirly-loader-radius - $size;
     $x: $radius * sin($angle);
     $y: $radius * cos($angle);
-    $shadows: append($shadows, $whirly-color $x $y 0 $size);
+    $shadows: append($shadows, $whirly-loader-color $x $y 0 $size);
     $angle: $angle + 2deg;
   }
   
   @include box-shadow($shadows);
   
-  @include animation(whirly-loader $whirly-speed infinite linear);
+  @include animation(whirly-loader $whirly-loader-speed infinite linear);
   @include transform-origin(50%, 50%);
 }

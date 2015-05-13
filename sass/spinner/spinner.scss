@@ -1,6 +1,6 @@
 @import "base";
 
-$spinner-color: rgba(#003, 0.3) !default;
+$spinner-loader-color: rgba(#003, 0.3) !default;
 
 @include keyframes(spinner-loader) {
   0%   { @include rotateZ(0deg); }
@@ -12,14 +12,14 @@ $spinner-color: rgba(#003, 0.3) !default;
   @include animation(spinner-loader 1500ms infinite linear);
   @include border-radius(0.5em);
   @include box-shadow(
-    $spinner-color 1.5em 0 0 0,
-    $spinner-color 1.1em 1.1em 0 0,
-    $spinner-color 0 1.5em 0 0,
-    $spinner-color -1.1em 1.1em 0 0,
-    $spinner-color -1.5em 0 0 0,
-    $spinner-color -1.1em -1.1em 0 0,
-    $spinner-color 0 -1.5em 0 0,
-    $spinner-color 1.1em -1.1em 0 0
+    $spinner-loader-color 1.5em 0 0 0,
+    $spinner-loader-color 1.1em 1.1em 0 0,
+    $spinner-loader-color 0 1.5em 0 0,
+    $spinner-loader-color -1.1em 1.1em 0 0,
+    $spinner-loader-color -1.5em 0 0 0,
+    $spinner-loader-color -1.1em -1.1em 0 0,
+    $spinner-loader-color 0 -1.5em 0 0,
+    $spinner-loader-color 1.1em -1.1em 0 0
   );
   display: inline-block;
   font-size: 10px;

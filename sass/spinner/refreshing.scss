@@ -1,6 +1,6 @@
 @import "base";
 
-$refreshing-color: #9ac;
+$refreshing-loader-color: #9ac;
 
 @include keyframes(refreshing-loader) {
   0%   { @include rotateZ(0deg); }
@@ -11,7 +11,7 @@ $refreshing-color: #9ac;
 .refreshing-loader:not(:required) {
   @include animation(refreshing-loader 1000ms infinite linear);
   @include border-radius(2.4em);
-  border: 0.4em solid $refreshing-color;
+  border: 0.4em solid $refreshing-loader-color;
   border-left-color: transparent;
   color: transparent;
   display: inline-block;
@@ -24,8 +24,8 @@ $refreshing-color: #9ac;
   &:after {
     display: block;
     border: 0.5em solid transparent;
-    border-top-color: $refreshing-color;
-    border-left-color: $refreshing-color;
+    border-top-color: $refreshing-loader-color;
+    border-left-color: $refreshing-loader-color;
     content: '';
     width: 0;
     height: 0;
