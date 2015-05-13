@@ -3,7 +3,8 @@ Spinner.css
 
 Simple CSS loading indicators made with CSS and minimal HTML markup.
 
-## Markup
+Markup
+------
 
 All loading indicators are designed to be used with the following markup:
 
@@ -15,7 +16,8 @@ All loading indicators are designed to be used with the following markup:
 
 Simply replace "loading-indicator" with the class name of your choice.
 
-## Using CSS
+Using CSS
+---------
 
 To use a specific loading indicator link the appropriate file:
 
@@ -38,7 +40,8 @@ Then apply the appropriate class name for the spinner of your choice to the mark
 ```
 
 
-## Loading indicators
+Loading indicators
+------------------
 
 | Class                  | Description                                                    |
 | ---------------------- | -------------------------------------------------------------- |
