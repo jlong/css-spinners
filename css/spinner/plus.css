@@ -608,7 +608,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.plus:not(:required) {
+.plus-loader:not(:required) {
   overflow: hidden;
   position: relative;
   text-indent: -9999px;
@@ -631,7 +631,7 @@
   -webkit-animation: plus-background 3s infinite ease-in-out;
   animation: plus-background 3s infinite ease-in-out;
 }
-.plus:not(:required)::after {
+.plus-loader:not(:required)::after {
   background: #f86;
   -moz-border-radius: 24px 0 0 24px;
   -webkit-border-radius: 24px;
@@ -650,7 +650,7 @@
   -webkit-animation: plus-top 3s infinite linear;
   animation: plus-top 3s infinite linear;
 }
-.plus:not(:required)::before {
+.plus-loader:not(:required)::before {
   background: #fc6;
   -moz-border-radius: 24px 0 0 24px;
   -webkit-border-radius: 24px;

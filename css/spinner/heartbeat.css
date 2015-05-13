@@ -75,7 +75,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.heartbeat:not(:required) {
+.heartbeat-loader:not(:required) {
   -moz-animation: heartbeat 1300ms ease 0s infinite normal;
   -webkit-animation: heartbeat 1300ms ease 0s infinite normal;
   animation: heartbeat 1300ms ease 0s infinite normal;
@@ -94,12 +94,12 @@
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
-.heartbeat:not(:required):after, .heartbeat:not(:required):before {
+.heartbeat-loader:not(:required):after, .heartbeat-loader:not(:required):before {
   position: absolute;
   content: "";
   background: #e87;
 }
-.heartbeat:not(:required):before {
+.heartbeat-loader:not(:required):before {
   -moz-border-radius-topleft: 12px;
   -webkit-border-top-left-radius: 12px;
   border-top-left-radius: 12px;
@@ -111,7 +111,7 @@
   width: 36px;
   height: 24px;
 }
-.heartbeat:not(:required):after {
+.heartbeat-loader:not(:required):after {
   -moz-border-radius-topleft: 12px;
   -webkit-border-top-left-radius: 12px;
   border-top-left-radius: 12px;

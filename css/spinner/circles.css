@@ -33,7 +33,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.circles:not(:required) {
+.circles-loader:not(:required) {
   position: relative;
   text-indent: -9999px;
   display: inline-block;
@@ -49,7 +49,7 @@
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
-.circles:not(:required)::before {
+.circles-loader:not(:required)::before {
   background: rgba(255, 102, 0, 0.6);
   border-radius: 100%;
   content: '';
@@ -59,7 +59,7 @@
   top: 18.75px;
   left: -10.82532px;
 }
-.circles:not(:required)::after {
+.circles-loader:not(:required)::after {
   background: rgba(255, 51, 0, 0.4);
   border-radius: 100%;
   content: '';

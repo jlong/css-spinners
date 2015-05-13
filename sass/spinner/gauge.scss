@@ -29,7 +29,7 @@ $gauge-color: #6ca;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.gauge:not(:required) {
+.gauge-loader:not(:required) {
   background: $gauge-color;
   @include border-top-radius($gauge-size / 2);
   display: inline-block;

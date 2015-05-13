@@ -32,7 +32,7 @@
   }
 }
 /* :not(:required) hides these rules from IE9 and below */
-.throbber:not(:required) {
+.throbber-loader:not(:required) {
   -moz-animation: throbber 2000ms 300ms infinite ease-out;
   -webkit-animation: throbber 2000ms 300ms infinite ease-out;
   animation: throbber 2000ms 300ms infinite ease-out;
@@ -44,7 +44,7 @@
   height: 1.5em;
   margin: 0 1.6em;
 }
-.throbber:not(:required):before, .throbber:not(:required):after {
+.throbber-loader:not(:required):before, .throbber-loader:not(:required):after {
   background: #dde2e7;
   content: '\x200B';
   display: inline-block;
@@ -53,13 +53,13 @@
   position: absolute;
   top: 0;
 }
-.throbber:not(:required):before {
+.throbber-loader:not(:required):before {
   -moz-animation: throbber 2000ms 150ms infinite ease-out;
   -webkit-animation: throbber 2000ms 150ms infinite ease-out;
   animation: throbber 2000ms 150ms infinite ease-out;
   left: -1.6em;
 }
-.throbber:not(:required):after {
+.throbber-loader:not(:required):after {
   -moz-animation: throbber 2000ms 450ms infinite ease-out;
   -webkit-animation: throbber 2000ms 450ms infinite ease-out;
   animation: throbber 2000ms 450ms infinite ease-out;

@@ -174,7 +174,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.dots:not(:required) {
+.dots-loader:not(:required) {
   overflow: hidden;
   position: relative;
   text-indent: -9999px;

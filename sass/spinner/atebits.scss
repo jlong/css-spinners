@@ -40,7 +40,7 @@ $atebits-segment: $atebits-size / 11;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.atebits:not(:required) {
+.atebits-loader:not(:required) {
   background: $atebits-color;
   display: inline-block;
   width: $atebits-segment * 3;

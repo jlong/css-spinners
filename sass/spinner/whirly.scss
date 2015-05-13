@@ -13,7 +13,7 @@ $whirly-dot-size: $whirly-size / 8;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.whirly:not(:required) {
+.whirly-loader:not(:required) {
   overflow: hidden;
   position: relative;
   text-indent: -9999px;

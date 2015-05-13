@@ -48,14 +48,8 @@ $wobblebar-color: #a9d;
   97% { left: (26 * $wobblebar-size / 32); }
 }
 
-/* Styles for old versions of IE */
-.wobblebar {
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
 /* :not(:required) hides this rule from IE9 and below */
-.wobblebar:not(:required) {
+.wobblebar-loader:not(:required) {
   background: $wobblebar-color;
   @include border-radius($wobblebar-size / 12);
   display: inline-block;

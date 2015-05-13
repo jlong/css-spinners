@@ -73,7 +73,7 @@ $ball-diameter: $ball-size / 4;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.ball:not(:required) {
+.ball-loader:not(:required) {
   position: relative;
   display: inline-block;
   // z-index: 1;

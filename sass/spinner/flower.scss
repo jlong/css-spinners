@@ -34,7 +34,7 @@ $flower-dot-size: $flower-segment * 4;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.flower:not(:required) {
+.flower-loader:not(:required) {
   overflow: hidden;
   position: relative;
   text-indent: -9999px;

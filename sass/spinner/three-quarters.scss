@@ -9,7 +9,7 @@ $three-quarters-color: #38e;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.three-quarters:not(:required) {
+.three-quarters-loader:not(:required) {
   @include animation(three-quarters 1250ms infinite linear);
   border: ($three-quarters-size/4) solid $three-quarters-color;
   border-right-color: transparent;

@@ -17,7 +17,7 @@ $circle-3: nth($circles-colors, 3);
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.circles:not(:required) {
+.circles-loader:not(:required) {
   position: relative;
   text-indent: -9999px;
 

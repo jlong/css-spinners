@@ -13,7 +13,7 @@ $heartbeat-rotation: rotate(45deg);
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.heartbeat:not(:required) {
+.heartbeat-loader:not(:required) {
   @include animation(heartbeat 1300ms ease 0s infinite normal);
   
   display: inline-block;

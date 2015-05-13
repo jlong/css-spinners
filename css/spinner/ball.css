@@ -311,7 +311,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.ball:not(:required) {
+.ball-loader:not(:required) {
   position: relative;
   display: inline-block;
   font-size: 0;
@@ -335,7 +335,7 @@
   -webkit-animation: ball 1500ms infinite linear;
   animation: ball 1500ms infinite linear;
 }
-.ball:not(:required)::after {
+.ball-loader:not(:required)::after {
   content: '';
   position: absolute;
   top: 4.5px;
@@ -352,7 +352,7 @@
   -webkit-animation: ball-highlight 1500ms infinite linear;
   animation: ball-highlight 1500ms infinite linear;
 }
-.ball:not(:required)::before {
+.ball-loader:not(:required)::before {
   content: '';
   position: absolute;
   top: 50px;

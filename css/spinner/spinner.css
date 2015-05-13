@@ -33,7 +33,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.spinner:not(:required) {
+.spinner-loader:not(:required) {
   -moz-animation: spinner 1500ms infinite linear;
   -webkit-animation: spinner 1500ms infinite linear;
   animation: spinner 1500ms infinite linear;

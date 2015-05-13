@@ -33,7 +33,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.timer:not(:required) {
+.timer-loader:not(:required) {
   border: 6px solid #c8d;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
@@ -48,7 +48,7 @@
   width: 48px;
   height: 48px;
 }
-.timer:not(:required)::before {
+.timer-loader:not(:required)::before {
   -moz-animation: timer 1250ms infinite linear;
   -webkit-animation: timer 1250ms infinite linear;
   animation: timer 1250ms infinite linear;
@@ -68,7 +68,7 @@
   left: 15px;
   top: 15px;
 }
-.timer:not(:required)::after {
+.timer-loader:not(:required)::after {
   -moz-animation: timer 15000ms infinite linear;
   -webkit-animation: timer 15000ms infinite linear;
   animation: timer 15000ms infinite linear;

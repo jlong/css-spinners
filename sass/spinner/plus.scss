@@ -150,7 +150,7 @@ $plus-color-4: nth($plus-colors, 4);
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.plus:not(:required) {
+.plus-loader:not(:required) {
   overflow: hidden;
   position: relative;
   text-indent: -9999px;

@@ -8,7 +8,7 @@ $refreshing-color: #9ac;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.refreshing:not(:required) {
+.refreshing-loader:not(:required) {
   @include animation(spinner 1000ms infinite linear);
   @include border-radius(2.4em);
   border: 0.4em solid $refreshing-color;

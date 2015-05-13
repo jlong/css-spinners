@@ -229,7 +229,7 @@
   }
 }
 /* :not(:required) hides this rule from IE9 and below */
-.gauge:not(:required) {
+.gauge-loader:not(:required) {
   background: #6ca;
   -moz-border-radius-topleft: 32px;
   -webkit-border-top-left-radius: 32px;
@@ -244,7 +244,7 @@
   position: relative;
   text-indent: -9999px;
 }
-.gauge:not(:required)::before {
+.gauge-loader:not(:required)::before {
   -moz-animation: gauge 4000ms infinite ease;
   -webkit-animation: gauge 4000ms infinite ease;
   animation: gauge 4000ms infinite ease;
@@ -263,7 +263,7 @@
   -webkit-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
 }
-.gauge:not(:required)::after {
+.gauge-loader:not(:required)::after {
   content: '';
   background: white;
   -moz-border-radius: 8px;
