@@ -7,9 +7,11 @@ Simple CSS loading indicators made with CSS and minimal HTML markup.
 
 All loading indicators are designed to be used with the following markup:
 
-    <div class="loading-indicator">
-      Loading...
-    </div>
+```html
+<div class="loading-indicator">
+	Loading...
+</div>
+```
 
 Simply replace "loading-indicator" with the class name of your choice.
 
@@ -17,17 +19,23 @@ Simply replace "loading-indicator" with the class name of your choice.
 
 To use a specific loading indicator link the appropriate file:
 
-    <link rel="stylesheet" href="css/spinner/throbber.css">
+```html
+<link rel="stylesheet" href="css/spinner/throbber.css">
+```
 
 Or, if you'd like to have access to the entire library of spinners you can link the root file:
 
-    <link rel="stylesheet" href="css/spinners.css">
+```html
+<link rel="stylesheet" href="css/spinners.css">
+```
 
 Then apply the appropriate class name for the spinner of your choice to the markup:
 
-    <div class="throbber-loader">
-      Loading...
-    </div>
+```html
+<div class="throbber-loader">
+	Loading...
+</div>
+```
 
 
 ## Loading indicators
