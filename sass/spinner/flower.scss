@@ -10,7 +10,7 @@ $flower-center: nth($flower-colors, 2);
 $flower-segment: $flower-size / 10;
 $flower-dot-size: $flower-segment * 4;
 
-@include keyframes(flower) {
+@include keyframes(flower-loader) {
   0%   {
     @include rotateZ(0deg);
     @include box-shadow(
@@ -53,6 +53,6 @@ $flower-dot-size: $flower-segment * 4;
     $flower-petal (-3 * $flower-segment) ( 3 * $flower-segment) 0 $flower-segment
   );
 
-  @include animation(flower $flower-speed infinite ease-in-out);
+  @include animation(flower-loader $flower-speed infinite ease-in-out);
   @include transform-origin(50%, 50%);
 }

@@ -4,7 +4,7 @@ $gauge-size: 64px;
 $gauge-speed: 4000ms;
 $gauge-color: #6ca;
 
-@include keyframes(gauge) {
+@include keyframes(gauge-loader) {
   0%   { @include rotateZ(-50deg); }
   
   10%  { @include rotateZ(20deg); }
@@ -40,7 +40,7 @@ $gauge-color: #6ca;
   text-indent: -9999px;
   
   &::before {
-    @include animation(gauge $gauge-speed infinite ease);
+    @include animation(gauge-loader $gauge-speed infinite ease);
     background: white;
     @include border-radius($gauge-size / 32);
     content: '';

@@ -3,14 +3,14 @@
 $three-quarters-size: 32px;
 $three-quarters-color: #38e;
 
-@include keyframes(three-quarters) {
+@include keyframes(three-quarters-loader) {
   0%   { @include rotateZ(0deg); }
   100% { @include rotateZ(360deg); }
 }
 
 /* :not(:required) hides this rule from IE9 and below */
 .three-quarters-loader:not(:required) {
-  @include animation(three-quarters 1250ms infinite linear);
+  @include animation(three-quarters-loader 1250ms infinite linear);
   border: ($three-quarters-size/4) solid $three-quarters-color;
   border-right-color: transparent;
   border-radius: ($three-quarters-size / 2);

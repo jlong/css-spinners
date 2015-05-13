@@ -1,4 +1,4 @@
-@-moz-keyframes timer {
+@-moz-keyframes timer-loader {
   0% {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -8,7 +8,7 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes timer {
+@-webkit-keyframes timer-loader {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -18,7 +18,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes timer {
+@keyframes timer-loader {
   0% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -49,9 +49,9 @@
   height: 48px;
 }
 .timer-loader:not(:required)::before {
-  -moz-animation: timer 1250ms infinite linear;
-  -webkit-animation: timer 1250ms infinite linear;
-  animation: timer 1250ms infinite linear;
+  -moz-animation: timer-loader 1250ms infinite linear;
+  -webkit-animation: timer-loader 1250ms infinite linear;
+  animation: timer-loader 1250ms infinite linear;
   -moz-transform-origin: 3px 3px;
   -ms-transform-origin: 3px 3px;
   -webkit-transform-origin: 3px 3px;
@@ -69,9 +69,9 @@
   top: 15px;
 }
 .timer-loader:not(:required)::after {
-  -moz-animation: timer 15000ms infinite linear;
-  -webkit-animation: timer 15000ms infinite linear;
-  animation: timer 15000ms infinite linear;
+  -moz-animation: timer-loader 15000ms infinite linear;
+  -webkit-animation: timer-loader 15000ms infinite linear;
+  animation: timer-loader 15000ms infinite linear;
   -moz-transform-origin: 3px 3px;
   -ms-transform-origin: 3px 3px;
   -webkit-transform-origin: 3px 3px;

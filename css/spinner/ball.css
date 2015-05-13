@@ -1,4 +1,4 @@
-@-moz-keyframes ball {
+@-moz-keyframes ball-loader {
   0% {
     -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
@@ -24,7 +24,7 @@
     animation-timing-function: ease-out;
   }
 }
-@-webkit-keyframes ball {
+@-webkit-keyframes ball-loader {
   0% {
     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
@@ -50,7 +50,7 @@
     animation-timing-function: ease-out;
   }
 }
-@keyframes ball {
+@keyframes ball-loader {
   0% {
     -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
     -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
@@ -88,7 +88,7 @@
     animation-timing-function: ease-out;
   }
 }
-@-moz-keyframes ball-highlight {
+@-moz-keyframes ball-loader-highlight {
   0% {
     -moz-transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
     transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
@@ -120,7 +120,7 @@
     animation-timing-function: ease-in;
   }
 }
-@-webkit-keyframes ball-highlight {
+@-webkit-keyframes ball-loader-highlight {
   0% {
     -webkit-transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
     transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
@@ -152,7 +152,7 @@
     animation-timing-function: ease-in;
   }
 }
-@keyframes ball-highlight {
+@keyframes ball-loader-highlight {
   0% {
     -moz-transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
     -ms-transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
@@ -199,7 +199,7 @@
     animation-timing-function: ease-in;
   }
 }
-@-moz-keyframes ball-shadow {
+@-moz-keyframes ball-loader-shadow {
   0% {
     -moz-transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
     transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
@@ -231,7 +231,7 @@
     animation-timing-function: ease-in;
   }
 }
-@-webkit-keyframes ball-shadow {
+@-webkit-keyframes ball-loader-shadow {
   0% {
     -webkit-transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
     transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
@@ -263,7 +263,7 @@
     animation-timing-function: ease-in;
   }
 }
-@keyframes ball-shadow {
+@keyframes ball-loader-shadow {
   0% {
     -moz-transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
     -ms-transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
@@ -331,9 +331,9 @@
   -ms-transform-origin: 0 100%;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
-  -moz-animation: ball 1500ms infinite linear;
-  -webkit-animation: ball 1500ms infinite linear;
-  animation: ball 1500ms infinite linear;
+  -moz-animation: ball-loader 1500ms infinite linear;
+  -webkit-animation: ball-loader 1500ms infinite linear;
+  animation: ball-loader 1500ms infinite linear;
 }
 .ball-loader:not(:required)::after {
   content: '';
@@ -348,9 +348,9 @@
   -ms-transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
   -webkit-transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
   transform: skew(-20deg, 0) translate3d(0, 2.5px, 1px);
-  -moz-animation: ball-highlight 1500ms infinite linear;
-  -webkit-animation: ball-highlight 1500ms infinite linear;
-  animation: ball-highlight 1500ms infinite linear;
+  -moz-animation: ball-loader-highlight 1500ms infinite linear;
+  -webkit-animation: ball-loader-highlight 1500ms infinite linear;
+  animation: ball-loader-highlight 1500ms infinite linear;
 }
 .ball-loader:not(:required)::before {
   content: '';
@@ -365,9 +365,9 @@
   -ms-transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
   -webkit-transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
   transform: translate3d(66.66667px, 66.66667px, -1px) scale3d(1.25, 1.25, 1);
-  -moz-animation: ball-shadow 1500ms infinite linear;
-  -webkit-animation: ball-shadow 1500ms infinite linear;
-  animation: ball-shadow 1500ms infinite linear;
+  -moz-animation: ball-loader-shadow 1500ms infinite linear;
+  -webkit-animation: ball-loader-shadow 1500ms infinite linear;
+  animation: ball-loader-shadow 1500ms infinite linear;
   -webkit-filter: blur(1px);
   filter: blur(1px);
 }

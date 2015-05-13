@@ -1,4 +1,4 @@
-@-moz-keyframes plus-top {
+@-moz-keyframes plus-loader-top {
   2.5% {
     background: #f86;
     -moz-transform: rotateY(0deg);
@@ -106,7 +106,7 @@
     animation-timing-function: step-start;
   }
 }
-@-webkit-keyframes plus-top {
+@-webkit-keyframes plus-loader-top {
   2.5% {
     background: #f86;
     -webkit-transform: rotateY(0deg);
@@ -214,7 +214,7 @@
     animation-timing-function: step-start;
   }
 }
-@keyframes plus-top {
+@keyframes plus-loader-top {
   2.5% {
     background: #f86;
     -moz-transform: rotateY(0deg);
@@ -367,7 +367,7 @@
     animation-timing-function: step-start;
   }
 }
-@-moz-keyframes plus-bottom {
+@-moz-keyframes plus-loader-bottom {
   0% {
     background: #fc6;
     -moz-animation-timing-function: step-start;
@@ -389,7 +389,7 @@
     animation-timing-function: step-start;
   }
 }
-@-webkit-keyframes plus-bottom {
+@-webkit-keyframes plus-loader-bottom {
   0% {
     background: #fc6;
     -webkit-animation-timing-function: step-start;
@@ -411,7 +411,7 @@
     animation-timing-function: step-start;
   }
 }
-@keyframes plus-bottom {
+@keyframes plus-loader-bottom {
   0% {
     background: #fc6;
     -moz-animation-timing-function: step-start;
@@ -437,7 +437,7 @@
     animation-timing-function: step-start;
   }
 }
-@-moz-keyframes plus-background {
+@-moz-keyframes plus-loader-background {
   0% {
     background: #f86;
     -moz-transform: rotateZ(180deg);
@@ -487,7 +487,7 @@
     animation-timing-function: step-start;
   }
 }
-@-webkit-keyframes plus-background {
+@-webkit-keyframes plus-loader-background {
   0% {
     background: #f86;
     -webkit-transform: rotateZ(180deg);
@@ -537,7 +537,7 @@
     animation-timing-function: step-start;
   }
 }
-@keyframes plus-background {
+@keyframes plus-loader-background {
   0% {
     background: #f86;
     -moz-transform: rotateZ(180deg);
@@ -627,9 +627,9 @@
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  -moz-animation: plus-background 3s infinite ease-in-out;
-  -webkit-animation: plus-background 3s infinite ease-in-out;
-  animation: plus-background 3s infinite ease-in-out;
+  -moz-animation: plus-loader-background 3s infinite ease-in-out;
+  -webkit-animation: plus-loader-background 3s infinite ease-in-out;
+  animation: plus-loader-background 3s infinite ease-in-out;
 }
 .plus-loader:not(:required)::after {
   background: #f86;
@@ -646,9 +646,9 @@
   -ms-transform-origin: 100% 50%;
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
-  -moz-animation: plus-top 3s infinite linear;
-  -webkit-animation: plus-top 3s infinite linear;
-  animation: plus-top 3s infinite linear;
+  -moz-animation: plus-loader-top 3s infinite linear;
+  -webkit-animation: plus-loader-top 3s infinite linear;
+  animation: plus-loader-top 3s infinite linear;
 }
 .plus-loader:not(:required)::before {
   background: #fc6;
@@ -665,7 +665,7 @@
   -ms-transform-origin: 100% 50%;
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
-  -moz-animation: plus-bottom 3s infinite linear;
-  -webkit-animation: plus-bottom 3s infinite linear;
-  animation: plus-bottom 3s infinite linear;
+  -moz-animation: plus-loader-bottom 3s infinite linear;
+  -webkit-animation: plus-loader-bottom 3s infinite linear;
+  animation: plus-loader-bottom 3s infinite linear;
 }

@@ -1,4 +1,4 @@
-@-moz-keyframes spinner {
+@-moz-keyframes refreshing-loader {
   0% {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -8,7 +8,7 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes spinner {
+@-webkit-keyframes refreshing-loader {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -18,7 +18,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes spinner {
+@keyframes refreshing-loader {
   0% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -34,9 +34,9 @@
 }
 /* :not(:required) hides this rule from IE9 and below */
 .refreshing-loader:not(:required) {
-  -moz-animation: spinner 1000ms infinite linear;
-  -webkit-animation: spinner 1000ms infinite linear;
-  animation: spinner 1000ms infinite linear;
+  -moz-animation: refreshing-loader 1000ms infinite linear;
+  -webkit-animation: refreshing-loader 1000ms infinite linear;
+  animation: refreshing-loader 1000ms infinite linear;
   -moz-border-radius: 2.4em;
   -webkit-border-radius: 2.4em;
   border-radius: 2.4em;

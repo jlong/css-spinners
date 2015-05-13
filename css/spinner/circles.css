@@ -1,4 +1,4 @@
-@-moz-keyframes circles {
+@-moz-keyframes circles-loader {
   0% {
     -moz-transform: rotate(-720deg);
     transform: rotate(-720deg);
@@ -8,7 +8,7 @@
     transform: rotate(720deg);
   }
 }
-@-webkit-keyframes circles {
+@-webkit-keyframes circles-loader {
   0% {
     -webkit-transform: rotate(-720deg);
     transform: rotate(-720deg);
@@ -18,7 +18,7 @@
     transform: rotate(720deg);
   }
 }
-@keyframes circles {
+@keyframes circles-loader {
   0% {
     -moz-transform: rotate(-720deg);
     -ms-transform: rotate(-720deg);
@@ -41,9 +41,9 @@
   height: 25px;
   background: rgba(255, 204, 51, 0.9);
   border-radius: 100%;
-  -moz-animation: circles 3s infinite ease-in-out;
-  -webkit-animation: circles 3s infinite ease-in-out;
-  animation: circles 3s infinite ease-in-out;
+  -moz-animation: circles-loader 3s infinite ease-in-out;
+  -webkit-animation: circles-loader 3s infinite ease-in-out;
+  animation: circles-loader 3s infinite ease-in-out;
   -moz-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;

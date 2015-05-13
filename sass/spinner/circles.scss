@@ -11,7 +11,7 @@ $circle-1: nth($circles-colors, 1);
 $circle-2: nth($circles-colors, 2);
 $circle-3: nth($circles-colors, 3);
 
-@include keyframes(circles) {
+@include keyframes(circles-loader) {
   0%  { @include rotateZ(-2*360deg); }
   50% { @include rotateZ(2*360deg); }
 }
@@ -52,6 +52,6 @@ $circle-3: nth($circles-colors, 3);
     left: $circles-radius * cos(30deg);
   }
   
-  @include animation(circles $circles-speed infinite ease-in-out);
+  @include animation(circles-loader $circles-speed infinite ease-in-out);
   @include transform-origin(50%, 100%);
 }

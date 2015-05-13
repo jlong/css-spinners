@@ -1,4 +1,4 @@
-@-moz-keyframes heartbeat {
+@-moz-keyframes heartbeat-loader {
   0% {
     -moz-transform: rotate(45deg) scale(1);
     transform: rotate(45deg) scale(1);
@@ -20,7 +20,7 @@
     transform: rotate(45deg) scale(1);
   }
 }
-@-webkit-keyframes heartbeat {
+@-webkit-keyframes heartbeat-loader {
   0% {
     -webkit-transform: rotate(45deg) scale(1);
     transform: rotate(45deg) scale(1);
@@ -42,7 +42,7 @@
     transform: rotate(45deg) scale(1);
   }
 }
-@keyframes heartbeat {
+@keyframes heartbeat-loader {
   0% {
     -moz-transform: rotate(45deg) scale(1);
     -ms-transform: rotate(45deg) scale(1);
@@ -76,9 +76,9 @@
 }
 /* :not(:required) hides this rule from IE9 and below */
 .heartbeat-loader:not(:required) {
-  -moz-animation: heartbeat 1300ms ease 0s infinite normal;
-  -webkit-animation: heartbeat 1300ms ease 0s infinite normal;
-  animation: heartbeat 1300ms ease 0s infinite normal;
+  -moz-animation: heartbeat-loader 1300ms ease 0s infinite normal;
+  -webkit-animation: heartbeat-loader 1300ms ease 0s infinite normal;
+  animation: heartbeat-loader 1300ms ease 0s infinite normal;
   display: inline-block;
   position: relative;
   overflow: hidden;

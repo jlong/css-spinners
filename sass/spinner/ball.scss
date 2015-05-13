@@ -7,7 +7,7 @@ $ball-speed: 1500ms;
 $ball-highlight: adjust-color($ball-color, $lightness: 10%);
 $ball-diameter: $ball-size / 4;
 
-@include keyframes(ball) {
+@include keyframes(ball-loader) {
   0%  {
     @include transform(translate3d(0, 0, 0) scale3d(1, 1, 1));
     @include animation-timing-function(ease-in);
@@ -26,7 +26,7 @@ $ball-diameter: $ball-size / 4;
   }
 }
 
-@include keyframes(ball-highlight) {
+@include keyframes(ball-loader-highlight) {
   0%  {
     @include transform(skew(-20deg, 0) translate3d(0, $ball-diameter / 20, 1px));
     @include animation-timing-function(ease-in);
@@ -49,7 +49,7 @@ $ball-diameter: $ball-size / 4;
   }
 }
 
-@include keyframes(ball-shadow) {
+@include keyframes(ball-loader-shadow) {
   0%  {
     @include transform(translate3d($ball-size / 3, $ball-size / 3, -1px) scale3d(1.25, 1.25, 1));
     @include animation-timing-function(ease-in);
@@ -89,7 +89,7 @@ $ball-diameter: $ball-size / 4;
   @include transform-style(preserve-3d);
   @include transform(translate3d(0, 0, 0) scale3d(1, 1, 1));
   @include transform-origin(0, 100%);
-  @include animation(ball $ball-speed infinite linear);
+  @include animation(ball-loader $ball-speed infinite linear);
   
   &::after {
     content: '';
@@ -106,7 +106,7 @@ $ball-diameter: $ball-size / 4;
     border-radius: 100%;
     
     @include transform(skew(-20deg, 0) translate3d(0, $ball-diameter / 20, 1px));
-    @include animation(ball-highlight $ball-speed infinite linear);
+    @include animation(ball-loader-highlight $ball-speed infinite linear);
   }
   
   &::before {
@@ -123,7 +123,7 @@ $ball-diameter: $ball-size / 4;
     border-radius: 100%;
     
     @include transform(translate3d($ball-size / 3, $ball-size / 3, -1px) scale3d(1.25, 1.25, 1));
-    @include animation(ball-shadow $ball-speed infinite linear);
+    @include animation(ball-loader-shadow $ball-speed infinite linear);
     
     @include filter(blur(1px));
   }

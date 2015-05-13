@@ -1,4 +1,4 @@
-@-moz-keyframes dots {
+@-moz-keyframes dots-loader {
   0% {
     -moz-box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
     box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
@@ -52,7 +52,7 @@
     box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
 }
-@-webkit-keyframes dots {
+@-webkit-keyframes dots-loader {
   0% {
     -webkit-box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
     box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
@@ -106,7 +106,7 @@
     box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   }
 }
-@keyframes dots {
+@keyframes dots-loader {
   0% {
     -moz-box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
     -webkit-box-shadow: white 0 0 15px 0, #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
@@ -186,9 +186,9 @@
   -moz-box-shadow: #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   -webkit-box-shadow: #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
   box-shadow: #f86 -14px -14px 0 7px, #fc6 14px -14px 0 7px, #6d7 14px 14px 0 7px, #4ae -14px 14px 0 7px;
-  -moz-animation: dots 5s infinite ease-in-out;
-  -webkit-animation: dots 5s infinite ease-in-out;
-  animation: dots 5s infinite ease-in-out;
+  -moz-animation: dots-loader 5s infinite ease-in-out;
+  -webkit-animation: dots-loader 5s infinite ease-in-out;
+  animation: dots-loader 5s infinite ease-in-out;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;

@@ -17,7 +17,7 @@ $dot-position-2: ( 2 * $dots-segment) (-2 * $dots-segment);
 $dot-position-3: ( 2 * $dots-segment) ( 2 * $dots-segment);
 $dot-position-4: (-2 * $dots-segment) ( 2 * $dots-segment);
 
-@include keyframes(dots) {
+@include keyframes(dots-loader) {
   0%   {
     @include box-shadow(
       white 0 0 15px 0,
@@ -156,6 +156,6 @@ $dot-position-4: (-2 * $dots-segment) ( 2 * $dots-segment);
     $dot-4 $dot-position-4 0 $dots-segment
   );
 
-  @include animation(dots $dots-speed infinite ease-in-out);
+  @include animation(dots-loader $dots-speed infinite ease-in-out);
   @include transform-origin(50%, 50%);
 }

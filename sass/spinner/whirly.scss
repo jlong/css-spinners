@@ -7,7 +7,7 @@ $whirly-speed: 1.25s;
 $whirly-radius: $whirly-size / 2;
 $whirly-dot-size: $whirly-size / 8;
 
-@include keyframes(whirly) {
+@include keyframes(whirly-loader) {
   0%   { @include rotateZ(0deg); }
   100% { @include rotateZ(360deg); }
 }
@@ -39,6 +39,6 @@ $whirly-dot-size: $whirly-size / 8;
   
   @include box-shadow($shadows);
   
-  @include animation(whirly $whirly-speed infinite linear);
+  @include animation(whirly-loader $whirly-speed infinite linear);
   @include transform-origin(50%, 50%);
 }

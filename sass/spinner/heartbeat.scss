@@ -4,7 +4,7 @@ $heartbeat-color: #e87;
 $heartbeat-size: 36px; // must be divisible by 2 and 3
 $heartbeat-rotation: rotate(45deg);
 
-@include keyframes(heartbeat) {
+@include keyframes(heartbeat-loader) {
   0%  { @include transform($heartbeat-rotation scale(1));   }
   14% { @include transform($heartbeat-rotation scale(1.3)); }
   28% { @include transform($heartbeat-rotation scale(1));   }
@@ -14,7 +14,7 @@ $heartbeat-rotation: rotate(45deg);
 
 /* :not(:required) hides this rule from IE9 and below */
 .heartbeat-loader:not(:required) {
-  @include animation(heartbeat 1300ms ease 0s infinite normal);
+  @include animation(heartbeat-loader 1300ms ease 0s infinite normal);
   
   display: inline-block;
   position: relative;  

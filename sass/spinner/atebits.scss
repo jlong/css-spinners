@@ -6,7 +6,7 @@ $atebits-speed: 8s;
 
 $atebits-segment: $atebits-size / 11;
 
-@include keyframes(atebits) {
+@include keyframes(atebits-loader) {
   0%    { @include rotateZ(0deg); }
 
   3%    { @include rotateZ(90deg); }
@@ -61,7 +61,7 @@ $atebits-segment: $atebits-size / 11;
     $atebits-color ( 4 * $atebits-segment) ( 4 * $atebits-segment) 0 0
   );
 
-  @include animation(atebits $atebits-speed infinite ease-in-out);
+  @include animation(atebits-loader $atebits-speed infinite ease-in-out);
   @include transform-origin(50%, 50%);
 }
 

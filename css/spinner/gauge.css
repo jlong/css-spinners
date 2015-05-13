@@ -1,4 +1,4 @@
-@-moz-keyframes gauge {
+@-moz-keyframes gauge-loader {
   0% {
     -moz-transform: rotate(-50deg);
     transform: rotate(-50deg);
@@ -64,7 +64,7 @@
     transform: rotate(-50deg);
   }
 }
-@-webkit-keyframes gauge {
+@-webkit-keyframes gauge-loader {
   0% {
     -webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
@@ -130,7 +130,7 @@
     transform: rotate(-50deg);
   }
 }
-@keyframes gauge {
+@keyframes gauge-loader {
   0% {
     -moz-transform: rotate(-50deg);
     -ms-transform: rotate(-50deg);
@@ -245,9 +245,9 @@
   text-indent: -9999px;
 }
 .gauge-loader:not(:required)::before {
-  -moz-animation: gauge 4000ms infinite ease;
-  -webkit-animation: gauge 4000ms infinite ease;
-  animation: gauge 4000ms infinite ease;
+  -moz-animation: gauge-loader 4000ms infinite ease;
+  -webkit-animation: gauge-loader 4000ms infinite ease;
+  animation: gauge-loader 4000ms infinite ease;
   background: white;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;

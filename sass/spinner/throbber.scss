@@ -6,7 +6,7 @@ $throbber-height: 1.5em !default;
 $throbber-segment-width: 0.9em !default;
 $throbber-spacing: 0.7em !default;
 
-@include keyframes(throbber) {
+@include keyframes(throbber-loader) {
   0%  { background: $throbber-color }
   10% { background: $throbber-highlight-color }
   40% { background: $throbber-color }
@@ -14,7 +14,7 @@ $throbber-spacing: 0.7em !default;
 
 /* :not(:required) hides these rules from IE9 and below */
 .throbber-loader:not(:required) {
-  @include animation(throbber 2000ms 300ms infinite ease-out);
+  @include animation(throbber-loader 2000ms 300ms infinite ease-out);
   background: $throbber-color;
   display: inline-block;
   position: relative;
@@ -34,12 +34,12 @@ $throbber-spacing: 0.7em !default;
   }
   
   &:before {
-    @include animation(throbber 2000ms 150ms infinite ease-out);
+    @include animation(throbber-loader 2000ms 150ms infinite ease-out);
     left: -($throbber-segment-width + $throbber-spacing);
   }
   
   &:after {
-    @include animation(throbber 2000ms 450ms infinite ease-out);
+    @include animation(throbber-loader 2000ms 450ms infinite ease-out);
     right: -($throbber-segment-width + $throbber-spacing);
   }
 }

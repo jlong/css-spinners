@@ -5,7 +5,7 @@ $timer-speed: 1250ms;
 $timer-color: #c8d;
 $timer-border-width: $timer-size / 8;
 
-@include keyframes(timer) {
+@include keyframes(timer-loader) {
   0%   { @include rotateZ(0deg); }
   100% { @include rotateZ(360deg); }
 }
@@ -23,7 +23,7 @@ $timer-border-width: $timer-size / 8;
   height: $timer-size;
   
   &::before {
-    @include animation(timer $timer-speed infinite linear);
+    @include animation(timer-loader $timer-speed infinite linear);
     @include transform-origin($timer-size / 16, $timer-size / 16);
     background: $timer-color;
     @include border-radius($timer-size / 16);
@@ -37,7 +37,7 @@ $timer-border-width: $timer-size / 8;
   }
   
   &::after {
-    @include animation(timer (12 * $timer-speed) infinite linear);
+    @include animation(timer-loader (12 * $timer-speed) infinite linear);
     @include transform-origin($timer-size / 16, $timer-size / 16);
     background: $timer-color;
     @include border-radius($timer-size / 16);

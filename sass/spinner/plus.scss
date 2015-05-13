@@ -9,7 +9,7 @@ $plus-color-2: nth($plus-colors, 2);
 $plus-color-3: nth($plus-colors, 3);
 $plus-color-4: nth($plus-colors, 4);
 
-@include keyframes(plus-top) {
+@include keyframes(plus-loader-top) {
   2.5% {
     background: $plus-color-1;
     @include transform(rotateY(0deg));
@@ -90,7 +90,7 @@ $plus-color-4: nth($plus-colors, 4);
   }
 }
 
-@include keyframes(plus-bottom) {
+@include keyframes(plus-loader-bottom) {
   0% {
     background: $plus-color-2;
     @include animation-timing-function(step-start);
@@ -109,7 +109,7 @@ $plus-color-4: nth($plus-colors, 4);
   }
 }
 
-@include keyframes(plus-background) {
+@include keyframes(plus-loader-background) {
   0% {
     background: $plus-color-1;
     @include transform(rotateZ(180deg));
@@ -172,7 +172,7 @@ $plus-color-4: nth($plus-colors, 4);
     width: 50%;
     height: 100%;
     @include transform-origin(100%, 50%);
-    @include animation(plus-top $plus-speed infinite linear);
+    @include animation(plus-loader-top $plus-speed infinite linear);
   }
   
   &::before {
@@ -185,10 +185,10 @@ $plus-color-4: nth($plus-colors, 4);
     width: 50%;
     height: 100%;
     @include transform-origin(100%, 50%);
-    @include animation(plus-bottom $plus-speed infinite linear);
+    @include animation(plus-loader-bottom $plus-speed infinite linear);
   }
 
   @include transform(rotateZ(90deg));
   @include transform-origin(50%, 50%);
-  @include animation(plus-background $plus-speed infinite ease-in-out);
+  @include animation(plus-loader-background $plus-speed infinite ease-in-out);
 }

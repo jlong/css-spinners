@@ -1,4 +1,4 @@
-@-moz-keyframes wobblebar {
+@-moz-keyframes wobblebar-loader {
   0% {
     left: 4px;
   }
@@ -78,7 +78,7 @@
     left: 104px;
   }
 }
-@-webkit-keyframes wobblebar {
+@-webkit-keyframes wobblebar-loader {
   0% {
     left: 4px;
   }
@@ -158,7 +158,7 @@
     left: 104px;
   }
 }
-@keyframes wobblebar {
+@keyframes wobblebar-loader {
   0% {
     left: 4px;
   }
@@ -252,9 +252,9 @@
   position: relative;
 }
 .wobblebar-loader:not(:required)::after {
-  -moz-animation: wobblebar 15000ms infinite ease;
-  -webkit-animation: wobblebar 15000ms infinite ease;
-  animation: wobblebar 15000ms infinite ease;
+  -moz-animation: wobblebar-loader 15000ms infinite ease;
+  -webkit-animation: wobblebar-loader 15000ms infinite ease;
+  animation: wobblebar-loader 15000ms infinite ease;
   background: white;
   display: block;
   -moz-border-radius: 7.11111px;

@@ -4,7 +4,7 @@ $wobblebar-size: 128px;
 $wobblebar-speed: 15000ms;
 $wobblebar-color: #a9d;
 
-@include keyframes(wobblebar) {
+@include keyframes(wobblebar-loader) {
   0%  { left: ($wobblebar-size / 32); }
   3%  { left: (26 * $wobblebar-size / 32); }
   
@@ -60,7 +60,7 @@ $wobblebar-color: #a9d;
   position: relative;
   
   &::after {
-    @include animation(wobblebar $wobblebar-speed infinite ease);
+    @include animation(wobblebar-loader $wobblebar-speed infinite ease);
     background: white;
     display: block;
     @include border-radius(2 * $wobblebar-size / 36);
