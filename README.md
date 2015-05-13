@@ -40,73 +40,20 @@ Then apply the appropriate class name for the spinner of your choice to the mark
 
 ## Loading indicators
 
-<table>
-  <thead>
-    <tr>
-      <th>Class</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>.spinner-loader</td>
-      <td>Spinning circles.</td>
-    </tr>
-    <tr>
-      <td>.throbber-loader</td>
-      <td>Animated Facebook-like throbber.</td>
-    </tr>
-    <tr>
-      <td>.refreshing-loader</td>
-      <td>Circular spinning arrow. Great for refreshing content.</td>
-    </tr>
-    <tr>
-      <td>.heartbeat-loader</td>
-      <td>Animated beating heart.</td>
-    </tr>
-    <tr>
-      <td>.gauge-loader</td>
-      <td>Animated speedometer-like gauge with rotating needle.</td>
-    </tr>
-    <tr>
-      <td>.three-quarters-loader</td>
-      <td>Minimal three-quarters donut spinner.</td>
-    </tr>
-    <tr>
-      <td>.wobblebar-loader</td>
-      <td>Animated wobbling progress bar.</td>
-    </tr>
-    <tr>
-      <td>.atebits-loader</td>
-      <td>Staight out of Letterpress, an animated rotating Atebits logo.</td>
-    </tr>
-    <tr>
-      <td>.whirly-loader</td>
-      <td>A comet-like rotating spinner.</td>
-    </tr>
-    <tr>
-      <td>.flower-loader</td>
-      <td>An animated spinning flower.</td>
-    </tr>
-    <tr>
-      <td>.dots-loader</td>
-      <td>Almost a rotating shell game. With dots!</td>
-    </tr>
-    <tr>
-      <td>.circles-loader</td>
-      <td>Three rotating multi-colored circles.</td>
-    </tr>
-    <tr>
-      <td>.plus-loader</td>
-      <td>Animated Google Plus-like loader.</td>
-    </tr>
-    <tr>
-      <td>.ball-loader</td>
-      <td>A bouncing ball.</td>
-    </tr>
-    <tr>
-      <td>.hexdots-loader</td>
-      <td>Similar to the dots animation, but with six!</td>
-    </tr>
-  </tbody>
-</table>
+| Class                  | Description                                                    |
+| ---------------------- | -------------------------------------------------------------- |
+| .spinner-loader        | Spinning circles.                                              |
+| .throbber-loader       | Animated Facebook-like throbber.                               |
+| .refreshing-loader     | Circular spinning arrow. Great for refreshing content.         |
+| .heartbeat-loader      | Animated beating heart.                                        |
+| .gauge-loader          | Animated speedometer-like gauge with rotating needle.          |
+| .three-quarters-loader | Minimal three-quarters donut spinner.                          |
+| .wobblebar-loader      | Animated wobbling progress bar.                                |
+| .atebits-loader        | Staight out of Letterpress, an animated rotating Atebits logo. |
+| .whirly-loader         | A comet-like rotating spinner.                                 |
+| .flower-loader         | An animated spinning flower.                                   |
+| .dots-loader           | Almost a rotating shell game. With dots!                       |
+| .circles-loader        | Three rotating multi-colored circles.                          |
+| .plus-loader           | Animated Google Plus-like loader.                              |
+| .ball-loader           | A bouncing ball.                                               |
+| .hexdots-loader        | Similar to the dots animation, but with six!                   |
