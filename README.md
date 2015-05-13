@@ -96,5 +96,9 @@ Then apply the appropriate class name for the spinner of your choice to the mark
       <td>.ball-loader</td>
       <td>A bouncing ball.</td>
     </tr>
+    <tr>
+      <td>.hexdots-loader</td>
+      <td>Similar to the dots animation, but with six!</td>
+    </tr>
   </tbody>
 </table>

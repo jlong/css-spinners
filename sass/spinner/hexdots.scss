@@ -1,0 +1,194 @@
+@import "base";
+
+$hexdots-loader-size: 49px;
+$hexdots-loader-color: #999;
+$hexdots-loader-colors: darken($hexdots-loader-color, 20%) $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color;
+$hexdots-loader-speed: 5s;
+$hexdots-loader-1: nth($hexdots-loader-colors, 1);
+$hexdots-loader-2: nth($hexdots-loader-colors, 2);
+$hexdots-loader-3: nth($hexdots-loader-colors, 3);
+$hexdots-loader-4: nth($hexdots-loader-colors, 4);
+$hexdots-loader-5: nth($hexdots-loader-colors, 5);
+$hexdots-loader-6: nth($hexdots-loader-colors, 6);
+$hexdots-loader-7: nth($hexdots-loader-colors, 7);
+
+$hexdots-loader-segment: $hexdots-loader-size / 7;
+$hexdots-loader-dot-size: $hexdots-loader-segment * 3;
+
+$hexdots-loader-position-1: 0 -30px;
+$hexdots-loader-position-2: 26px -15px;
+$hexdots-loader-position-3: 26px 15px;
+$hexdots-loader-position-4: 0 30px;
+$hexdots-loader-position-5: -26px 15px;
+$hexdots-loader-position-6: -26px -15px;
+
+@include keyframes(hexdots-loader) {
+  0% {
+    @include box-shadow(
+      $hexdots-loader-1 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  8.33% {
+    @include box-shadow(
+      $hexdots-loader-1 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  16.67% {
+    @include box-shadow(
+      $hexdots-loader-1 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  25% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  33.33% {
+    @include box-shadow(
+      $hexdots-loader-1 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  41.67% {
+    @include box-shadow(
+      $hexdots-loader-1 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  50% {
+    @include box-shadow(
+      $hexdots-loader-1 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-1 0 $hexdots-loader-segment
+      );
+  }
+  58.33% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-2 0 $hexdots-loader-segment
+      );
+  }
+  66.67% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-3 0 $hexdots-loader-segment
+      );
+  }
+  75% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-4 0 $hexdots-loader-segment
+      );
+  }
+  83.33% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-5 0 $hexdots-loader-segment
+      );
+  }
+  91.67% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-6 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+  100% {
+    @include box-shadow (
+      $hexdots-loader-1 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-2 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+      $hexdots-loader-3 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+      $hexdots-loader-4 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+      $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+      $hexdots-loader-6 $hexdots-loader-position-5 0 $hexdots-loader-segment,
+      $hexdots-loader-7 $hexdots-loader-position-6 0 $hexdots-loader-segment
+      );
+  }
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.hexdots-loader:not(:required) {
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999px;
+
+  display: inline-block;
+  width: $hexdots-loader-segment;
+  height: $hexdots-loader-segment;
+
+  background: transparent;
+  border-radius: 100%;
+  @include box-shadow(
+    $hexdots-loader-1 $hexdots-loader-position-1 0 $hexdots-loader-segment,
+    $hexdots-loader-2 $hexdots-loader-position-2 0 $hexdots-loader-segment,
+    $hexdots-loader-3 $hexdots-loader-position-3 0 $hexdots-loader-segment,
+    $hexdots-loader-4 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+    $hexdots-loader-5 $hexdots-loader-position-4 0 $hexdots-loader-segment,
+    $hexdots-loader-6 $hexdots-loader-position-4 0 $hexdots-loader-segment
+  );
+
+  @include animation(hexdots-loader $hexdots-loader-speed infinite ease-in-out);
+  @include transform-origin(50%, 50%);
+}
