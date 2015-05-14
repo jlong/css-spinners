@@ -62,6 +62,10 @@ The full list of loading indicator class names are shown below. To see them in a
 | .hexdots-loader        | Similar to the dots animation, but with six!                   |
 
 
+Customize with Sass
+-------------------
+
+Many of the spinners in this collection can be customized by tweaking variables included in the Sass [source files](sass/spinners).
 
 
 Install with Bower
