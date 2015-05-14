@@ -5,10 +5,7 @@ Simple CSS loading indicators made with CSS and minimal HTML markup.
 
 ![screenshot](http://f.cl.ly/items/033Q0Q202X430L1S2Z0A/css-spinners.png)
 
-Markup
-------
-
-All loading indicators are designed to be used with the following markup:
+All loading indicators are designed to be used with minimal markup:
 
 ```html
 <div class="loading-indicator">
@@ -18,8 +15,8 @@ All loading indicators are designed to be used with the following markup:
 
 Simply replace "loading-indicator" with the class name of your choice.
 
-Using CSS
----------
+Markup
+------
 
 To use a specific loading indicator link the appropriate file:
 
@@ -33,7 +30,7 @@ Or, if you'd like to have access to the entire library of spinners you can link 
 <link rel="stylesheet" href="css/spinners.css">
 ```
 
-Then apply the appropriate class name for the spinner of your choice to the markup:
+Then apply the appropriate [class name](#class-names) for the spinner of your choice to the markup:
 
 ```html
 <div class="throbber-loader">
@@ -41,9 +38,10 @@ Then apply the appropriate class name for the spinner of your choice to the mark
 </div>
 ```
 
+Class names
+-----------
 
-Loading indicators
-------------------
+The full list of loading indicator class names are shown below. To see them in action, visit http://css-spinners.com/.
 
 | Class                  | Description                                                    |
 | ---------------------- | -------------------------------------------------------------- |
@@ -62,3 +60,21 @@ Loading indicators
 | .plus-loader           | Animated Google Plus-like loader.                              |
 | .ball-loader           | A bouncing ball.                                               |
 | .hexdots-loader        | Similar to the dots animation, but with six!                   |
+
+
+
+
+Install with Bower
+------------------
+
+You can install CSS Spinners with the following command, like any other [Bower](http://bower.io/) project:
+
+    $ bower install css-spinners
+
+CSS is available in the `css/` directory and Sass in the `sass/` directory.
+
+
+License
+-------
+
+CSS Spinners is freely available under the MIT License. See [LICENSE](LICENSE) file for details.
