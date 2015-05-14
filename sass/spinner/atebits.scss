@@ -1,10 +1,10 @@
 @import "base";
 
-$atebits-loader-size: 33px;
-$atebits-loader-color: rgba(black, 0.5);
-$atebits-loader-speed: 8s;
+$atebits-loader-size: 33px !default;
+$atebits-loader-color: rgba(black, 0.5) !default;
+$atebits-loader-speed: 8s !default;
 
-$atebits-loader-segment: $atebits-loader-size / 11;
+$atebits-loader-segment: $atebits-loader-size / 11 !default;
 
 @include keyframes(atebits-loader) {
   0%    { @include rotateZ(0deg); }

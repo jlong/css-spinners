@@ -1,15 +1,15 @@
 @import "base";
 
-$circles-loader-size: 50px;
-$circles-loader-speed: 3s;
-$circles-loader-colors: rgba(#fc3, 0.9) rgba(#f60, 0.6)  rgba(#f30, 0.4);
+$circles-loader-size: 50px !default;
+$circles-loader-speed: 3s !default;
+$circles-loader-colors: rgba(#fc3, 0.9) rgba(#f60, 0.6)  rgba(#f30, 0.4) !default;
 
-$circles-loader-radius: $circles-loader-size / 4;
-$circles-loader-diameter: $circles-loader-size / 2;
+$circles-loader-radius: $circles-loader-size / 4 !default;
+$circles-loader-diameter: $circles-loader-size / 2 !default;
 
-$circle-1: nth($circles-loader-colors, 1);
-$circle-2: nth($circles-loader-colors, 2);
-$circle-3: nth($circles-loader-colors, 3);
+$circles-loader-1: nth($circles-loader-colors, 1) !default;
+$circles-loader-2: nth($circles-loader-colors, 2) !default;
+$circles-loader-3: nth($circles-loader-colors, 3) !default;
 
 @include keyframes(circles-loader) {
   0%  { @include rotateZ(-2*360deg); }
@@ -25,13 +25,13 @@ $circle-3: nth($circles-loader-colors, 3);
   width: $circles-loader-diameter;
   height: $circles-loader-diameter;
 
-  background: $circle-1;
+  background: $circles-loader-1;
   border-radius: 100%;
   
   //@include box-shadow(white 0 -($circles-loader-segment/2) 0 0 inset);
   
   &::before {
-    background: $circle-2;
+    background: $circles-loader-2;
     border-radius: 100%;
     content: '';
     position: absolute;
@@ -42,7 +42,7 @@ $circle-3: nth($circles-loader-colors, 3);
   }
   
   &::after {
-    background: $circle-3;
+    background: $circles-loader-3;
     border-radius: 100%;
     content: '';
     position: absolute;

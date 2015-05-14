@@ -1,14 +1,14 @@
 @import "base";
 
-$flower-loader-size: 40px;
-$flower-loader-colors: #fd8 #e96;
-$flower-loader-speed: 5s;
+$flower-loader-size: 40px !default;
+$flower-loader-colors: #fd8 #e96 !default;
+$flower-loader-speed: 5s !default;
 
-$flower-loader-petal: nth($flower-loader-colors, 1);
-$flower-loader-center: nth($flower-loader-colors, 2);
+$flower-loader-petal: nth($flower-loader-colors, 1) !default;
+$flower-loader-center: nth($flower-loader-colors, 2) !default;
 
-$flower-loader-segment: $flower-loader-size / 10;
-$flower-loader-dot-size: $flower-loader-segment * 4;
+$flower-loader-segment: $flower-loader-size / 10 !default;
+$flower-loader-dot-size: $flower-loader-segment * 4 !default;
 
 @include keyframes(flower-loader) {
   0%   {

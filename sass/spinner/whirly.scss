@@ -1,11 +1,11 @@
 @import "base";
 
-$whirly-loader-size: 64px;
-$whirly-loader-color: #e66;
-$whirly-loader-speed: 1.25s;
+$whirly-loader-size: 64px !default;
+$whirly-loader-color: #e66 !default;
+$whirly-loader-speed: 1.25s !default;
 
-$whirly-loader-radius: $whirly-loader-size / 2;
-$whirly-loader-dot-size: $whirly-loader-size / 8;
+$whirly-loader-radius: $whirly-loader-size / 2 !default;
+$whirly-loader-dot-size: $whirly-loader-size / 8 !default;
 
 @include keyframes(whirly-loader) {
   0%   { @include rotateZ(0deg); }

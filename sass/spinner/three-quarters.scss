@@ -1,7 +1,7 @@
 @import "base";
 
-$three-quarters-loader-size: 32px;
-$three-quarters-loader-color: #38e;
+$three-quarters-loader-size: 32px !default;
+$three-quarters-loader-color: #38e !default;
 
 @include keyframes(three-quarters-loader) {
   0%   { @include rotateZ(0deg); }

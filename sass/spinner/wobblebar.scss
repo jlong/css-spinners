@@ -1,8 +1,8 @@
 @import "base";
 
-$wobblebar-loader-size: 128px;
-$wobblebar-loader-speed: 15000ms;
-$wobblebar-loader-color: #a9d;
+$wobblebar-loader-size: 128px !default;
+$wobblebar-loader-speed: 15000ms !default;
+$wobblebar-loader-color: #a9d !default;
 
 @include keyframes(wobblebar-loader) {
   0%  { left: ($wobblebar-loader-size / 32); }

@@ -1,9 +1,9 @@
 @import "base";
 
-$timer-size: 48px;
-$timer-speed: 1250ms;
-$timer-color: #c8d;
-$timer-border-width: $timer-size / 8;
+$timer-size: 48px !default;
+$timer-speed: 1250ms !default;
+$timer-color: #c8d !default;
+$timer-border-width: $timer-size / 8 !default;
 
 @include keyframes(timer-loader) {
   0%   { @include rotateZ(0deg); }

@@ -1,13 +1,13 @@
 @import "base";
 
-$plus-loader-size: 48px;
-$plus-loader-speed: 3s;
-$plus-loader-colors: #f86 #fc6 #6d7 #4ae;
+$plus-loader-size: 48px !default;
+$plus-loader-speed: 3s !default;
+$plus-loader-colors: #f86 #fc6 #6d7 #4ae !default;
 
-$plus-loader-color-1: nth($plus-loader-colors, 1);
-$plus-loader-color-2: nth($plus-loader-colors, 2);
-$plus-loader-color-3: nth($plus-loader-colors, 3);
-$plus-loader-color-4: nth($plus-loader-colors, 4);
+$plus-loader-color-1: nth($plus-loader-colors, 1) !default;
+$plus-loader-color-2: nth($plus-loader-colors, 2) !default;
+$plus-loader-color-3: nth($plus-loader-colors, 3) !default;
+$plus-loader-color-4: nth($plus-loader-colors, 4) !default;
 
 @include keyframes(plus-loader-top) {
   2.5% {

@@ -1,8 +1,8 @@
 @import "base";
 
-$heartbeat-loader-color: #e87;
-$heartbeat-loader-size: 36px; // must be divisible by 2 and 3
-$heartbeat-loader-rotation: rotate(45deg);
+$heartbeat-loader-color: #e87 !default;
+$heartbeat-loader-size: 36px !default; // must be an integer divisible by 2 and 3
+$heartbeat-loader-rotation: rotate(45deg) !default;
 
 @include keyframes(heartbeat-loader) {
   0%  { @include transform($heartbeat-loader-rotation scale(1));   }

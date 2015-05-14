@@ -1,138 +1,125 @@
 @import "base";
 
-$dots-loader-size: 49px;
-$dots-loader-colors: #f86 #fc6 #6d7 #4ae;
-$dots-loader-speed: 5s;
+$dots-loader-size: 49px !default;
+$dots-loader-colors: #f86 #fc6 #6d7 #4ae !default;
+$dots-loader-speed: 5s !default;
 
-$dots-1: nth($dots-loader-colors, 1);
-$dots-2: nth($dots-loader-colors, 2);
-$dots-3: nth($dots-loader-colors, 3);
-$dots-4: nth($dots-loader-colors, 4);
+$dots-loader-1: nth($dots-loader-colors, 1) !default;
+$dots-loader-2: nth($dots-loader-colors, 2) !default;
+$dots-loader-3: nth($dots-loader-colors, 3) !default;
+$dots-loader-4: nth($dots-loader-colors, 4) !default;
 
-$dots-loader-segment: $dots-loader-size / 7;
-$dots-loader-dot-size: $dots-loader-segment * 3;
+$dots-loader-segment: $dots-loader-size / 7 !default;
+$dots-loader-dot-size: $dots-loader-segment * 3 !default;
 
-$dots-position-1: (-2 * $dots-loader-segment) (-2 * $dots-loader-segment);
-$dots-position-2: ( 2 * $dots-loader-segment) (-2 * $dots-loader-segment);
-$dots-position-3: ( 2 * $dots-loader-segment) ( 2 * $dots-loader-segment);
-$dots-position-4: (-2 * $dots-loader-segment) ( 2 * $dots-loader-segment);
+$dots-loader-position-1: (-2 * $dots-loader-segment) (-2 * $dots-loader-segment);
+$dots-loader-position-2: ( 2 * $dots-loader-segment) (-2 * $dots-loader-segment);
+$dots-loader-position-3: ( 2 * $dots-loader-segment) ( 2 * $dots-loader-segment);
+$dots-loader-position-4: (-2 * $dots-loader-segment) ( 2 * $dots-loader-segment);
 
 @include keyframes(dots-loader) {
   0%   {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-1 0 $dots-loader-segment,
-      $dots-2 $dots-position-2 0 $dots-loader-segment,
-      $dots-3 $dots-position-3 0 $dots-loader-segment,
-      $dots-4 $dots-position-4 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
     );
   }
   8.33% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-2 0 $dots-loader-segment,
-      $dots-2 $dots-position-2 0 $dots-loader-segment,
-      $dots-3 $dots-position-3 0 $dots-loader-segment,
-      $dots-4 $dots-position-4 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
     );
   }
   16.67% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-3 0 $dots-loader-segment,
-      $dots-2 $dots-position-3 0 $dots-loader-segment,
-      $dots-3 $dots-position-3 0 $dots-loader-segment,
-      $dots-4 $dots-position-4 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
     );
   }
   25% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-4 0 $dots-loader-segment,
-      $dots-2 $dots-position-4 0 $dots-loader-segment,
-      $dots-3 $dots-position-4 0 $dots-loader-segment,
-      $dots-4 $dots-position-4 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
     );
   }
   33.33% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-1 0 $dots-loader-segment,
-      $dots-2 $dots-position-4 0 $dots-loader-segment,
-      $dots-3 $dots-position-1 0 $dots-loader-segment,
-      $dots-4 $dots-position-1 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-1 0 $dots-loader-segment
     );
   }
   41.67% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-2 0 $dots-loader-segment,
-      $dots-2 $dots-position-4 0 $dots-loader-segment,
-      $dots-3 $dots-position-1 0 $dots-loader-segment,
-      $dots-4 $dots-position-2 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-2 0 $dots-loader-segment
     );
   }
   50% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-3 0 $dots-loader-segment,
-      $dots-2 $dots-position-4 0 $dots-loader-segment,
-      $dots-3 $dots-position-1 0 $dots-loader-segment,
-      $dots-4 $dots-position-2 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-2 0 $dots-loader-segment
     );
   }
   58.33% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-4 0 $dots-loader-segment,
-      $dots-2 $dots-position-4 0 $dots-loader-segment,
-      $dots-3 $dots-position-1 0 $dots-loader-segment,
-      $dots-4 $dots-position-2 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-2 0 $dots-loader-segment
     );
   }
   66.67% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-1 0 $dots-loader-segment,
-      $dots-2 $dots-position-1 0 $dots-loader-segment,
-      $dots-3 $dots-position-1 0 $dots-loader-segment,
-      $dots-4 $dots-position-2 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-2 0 $dots-loader-segment
     );
   }
   75% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-2 0 $dots-loader-segment,
-      $dots-2 $dots-position-2 0 $dots-loader-segment,
-      $dots-3 $dots-position-2 0 $dots-loader-segment,
-      $dots-4 $dots-position-2 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-2 0 $dots-loader-segment
     );
   }
   83.33% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-3 0 $dots-loader-segment,
-      $dots-2 $dots-position-2 0 $dots-loader-segment,
-      $dots-3 $dots-position-3 0 $dots-loader-segment,
-      $dots-4 $dots-position-3 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-3 0 $dots-loader-segment
     );
   }
   91.67% {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-4 0 $dots-loader-segment,
-      $dots-2 $dots-position-2 0 $dots-loader-segment,
-      $dots-3 $dots-position-3 0 $dots-loader-segment,
-      $dots-4 $dots-position-4 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-4 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
     );
   }
   100%   {
     @include box-shadow(
-      white 0 0 15px 0,
-      $dots-1 $dots-position-1 0 $dots-loader-segment,
-      $dots-2 $dots-position-2 0 $dots-loader-segment,
-      $dots-3 $dots-position-3 0 $dots-loader-segment,
-      $dots-4 $dots-position-4 0 $dots-loader-segment
+      $dots-loader-1 $dots-loader-position-1 0 $dots-loader-segment,
+      $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+      $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+      $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
     );
   }
 }
@@ -150,10 +137,10 @@ $dots-position-4: (-2 * $dots-loader-segment) ( 2 * $dots-loader-segment);
   background: transparent;
   border-radius: 100%;
   @include box-shadow(
-    $dots-1 $dots-position-1 0 $dots-loader-segment,
-    $dots-2 $dots-position-2 0 $dots-loader-segment,
-    $dots-3 $dots-position-3 0 $dots-loader-segment,
-    $dots-4 $dots-position-4 0 $dots-loader-segment
+    $dots-loader-1 $dots-loader-position-1 0 $dots-loader-segment,
+    $dots-loader-2 $dots-loader-position-2 0 $dots-loader-segment,
+    $dots-loader-3 $dots-loader-position-3 0 $dots-loader-segment,
+    $dots-loader-4 $dots-loader-position-4 0 $dots-loader-segment
   );
 
   @include animation(dots-loader $dots-loader-speed infinite ease-in-out);

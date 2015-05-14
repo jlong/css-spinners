@@ -1,6 +1,6 @@
 @import "base";
 
-$refreshing-loader-color: #9ac;
+$refreshing-loader-color: #9ac !default;
 
 @include keyframes(refreshing-loader) {
   0%   { @include rotateZ(0deg); }

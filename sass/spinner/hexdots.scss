@@ -1,9 +1,9 @@
 @import "base";
 
-$hexdots-loader-size: 49px;
-$hexdots-loader-color: #999;
-$hexdots-loader-colors: darken($hexdots-loader-color, 20%) $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color;
-$hexdots-loader-speed: 5s;
+$hexdots-loader-size: 49px !default;
+$hexdots-loader-color: #999 !default;
+$hexdots-loader-colors: darken($hexdots-loader-color, 20%) $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color $hexdots-loader-color !default;
+$hexdots-loader-speed: 5s !default;
 $hexdots-loader-1: nth($hexdots-loader-colors, 1);
 $hexdots-loader-2: nth($hexdots-loader-colors, 2);
 $hexdots-loader-3: nth($hexdots-loader-colors, 3);
@@ -12,8 +12,8 @@ $hexdots-loader-5: nth($hexdots-loader-colors, 5);
 $hexdots-loader-6: nth($hexdots-loader-colors, 6);
 $hexdots-loader-7: nth($hexdots-loader-colors, 7);
 
-$hexdots-loader-segment: $hexdots-loader-size / 7;
-$hexdots-loader-dot-size: $hexdots-loader-segment * 3;
+$hexdots-loader-segment: $hexdots-loader-size / 7 !default;
+$hexdots-loader-dot-size: $hexdots-loader-segment * 3 !default;
 
 $hexdots-loader-position-1: 0 -30px;
 $hexdots-loader-position-2: 26px -15px;

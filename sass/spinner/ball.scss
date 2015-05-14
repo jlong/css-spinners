@@ -1,11 +1,11 @@
 @import "base";
 
-$ball-loader-size: 200px;
-$ball-loader-color: #f86;
-$ball-loader-speed: 1500ms;
+$ball-loader-size: 200px !default;
+$ball-loader-color: #f86 !default;
+$ball-loader-speed: 1500ms !default;
 
-$ball-loader-highlight: adjust-color($ball-loader-color, $lightness: 10%);
-$ball-loader-diameter: $ball-loader-size / 4;
+$ball-loader-highlight: adjust-color($ball-loader-color, $lightness: 10%) !default;
+$ball-loader-diameter: $ball-loader-size / 4 !default;
 
 @include keyframes(ball-loader) {
   0%  {

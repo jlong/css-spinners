@@ -1,8 +1,8 @@
 @import "base";
 
-$gauge-loader-size: 64px;
-$gauge-loader-speed: 4000ms;
-$gauge-loader-color: #6ca;
+$gauge-loader-size: 64px !default;
+$gauge-loader-speed: 4000ms !default;
+$gauge-loader-color: #6ca !default;
 
 @include keyframes(gauge-loader) {
   0%   { @include rotateZ(-50deg); }
