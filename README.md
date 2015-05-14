@@ -1,4 +1,4 @@
-Spinner.css
+CSS Spinners
 ===========
 
 Simple CSS loading indicators made with CSS and minimal HTML markup.
