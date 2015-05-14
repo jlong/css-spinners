@@ -65,7 +65,7 @@ The full list of loading indicator class names are shown below. To see them in a
 Customize with Sass
 -------------------
 
-Many of the spinners in this collection can be customized by tweaking variables included in the Sass [source files](sass/spinners).
+Many of the spinners in this collection can be customized by tweaking variables included in the Sass [source files](sass/spinner).
 
 
 Install with Bower
