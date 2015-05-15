@@ -8,4 +8,4 @@ Contributions are encouraged! To contribute:
 4. Commit your changes to your fork
 5. Create a pull request!
 
-All contributions will be licensed under the [MIT license](LICENSE) associated with this project. By submitting a pull-request you acknowledge that you are contributing code that you wrote or code that is in the public domain.
+All contributions will be licensed under the [MIT license](LICENSE) associated with this project. By submitting a pull-request you acknowledge that you are contributing code that you wrote or code that is in the public domain and you further yield any claim to copyright to the copyright holders of this repository.
