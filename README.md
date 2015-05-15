@@ -78,6 +78,12 @@ You can install CSS Spinners with the following command, like any other [Bower](
 CSS is available in the `css/` directory and Sass in the `sass/` directory.
 
 
+Contributions
+-------------
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+
 License
 -------
 
