@@ -2949,7 +2949,7 @@
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.innerball-loader:not(:required) {
+.innercircles-loader:not(:required) {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
@@ -2965,7 +2965,7 @@
   /* Hides inner circles outside base circle at safari */
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
-.innerball-loader:not(:required):before, .innerball-loader:not(:required):after {
+.innercircles-loader:not(:required):before, .innercircles-loader:not(:required):after {
   content: '';
   position: absolute;
   top: 0;
@@ -2974,10 +2974,10 @@
   height: 50px;
   border-radius: 50%;
 }
-.innerball-loader:not(:required):before {
-  -moz-animation: inner-circles 3s infinite;
-  -webkit-animation: inner-circles 3s infinite;
-  animation: inner-circles 3s infinite;
+.innercircles-loader:not(:required):before {
+  -moz-animation: innercircles 3s infinite;
+  -webkit-animation: innercircles 3s infinite;
+  animation: innercircles 3s infinite;
   -moz-transform-origin: 0 50%;
   -ms-transform-origin: 0 50%;
   -webkit-transform-origin: 0 50%;
@@ -2985,10 +2985,10 @@
   left: 0;
   background: #c7efcf;
 }
-.innerball-loader:not(:required):after {
-  -moz-animation: inner-circles 3s 0.2s reverse infinite;
-  -webkit-animation: inner-circles 3s 0.2s reverse infinite;
-  animation: inner-circles 3s 0.2s reverse infinite;
+.innercircles-loader:not(:required):after {
+  -moz-animation: innercircles 3s 0.2s reverse infinite;
+  -webkit-animation: innercircles 3s 0.2s reverse infinite;
+  animation: innercircles 3s 0.2s reverse infinite;
   -moz-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   -webkit-transform-origin: 100% 50%;
@@ -2997,7 +2997,7 @@
   background: #eef5db;
 }
 
-@-moz-keyframes inner-circles {
+@-moz-keyframes innercircles {
   0% {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -3011,7 +3011,7 @@
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes inner-circles {
+@-webkit-keyframes innercircles {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -3025,7 +3025,7 @@
     transform: rotate(0deg);
   }
 }
-@keyframes inner-circles {
+@keyframes innercircles {
   0% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);

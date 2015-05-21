@@ -1,20 +1,20 @@
 @import "compass/css3";
 
-$innerball-width: 50px !default;
-$innerball-height: 50px !default;
-$innerball-one-color: #19a598 !default;
-$innerball-two-color: #c7efcf !default;
-$innerball-three-color: #eef5db !default;
-$innerball-animation-time: 3s !default;
+$innercircles-width: 50px !default;
+$innercircles-height: 50px !default;
+$innercircles-one-color: #19a598 !default;
+$innercircles-two-color: #c7efcf !default;
+$innercircles-three-color: #eef5db !default;
+$innercircles-animation-time: 3s !default;
 
 /* :not(:required) hides this rule from IE9 and below */
-.innerball-loader:not(:required) {
+.innercircles-loader:not(:required) {
   @include transform(translate3d(0, 0, 0));
   position: relative;
   display: inline-block;
-  width: $innerball-width;
-  height: $innerball-height;
-  background: rgba($innerball-one-color, .5);
+  width: $innercircles-width;
+  height: $innercircles-height;
+  background: rgba($innercircles-one-color, .5);
   border-radius: 50%;
   overflow: hidden;
   text-indent: -9999px;
@@ -27,27 +27,27 @@ $innerball-animation-time: 3s !default;
     position: absolute;
     top: 0;
     display: inline-block;
-    width: $innerball-width;
-    height: $innerball-height;
+    width: $innercircles-width;
+    height: $innercircles-height;
     border-radius: 50%;
   }
 
   &:before {
-    @include animation(inner-circles $innerball-animation-time infinite);
+    @include animation(innercircles $innercircles-animation-time infinite);
     @include transform-origin(0, 50%);
     left: 0;
-    background: $innerball-two-color;
+    background: $innercircles-two-color;
   }
 
   &:after {
-    @include animation(inner-circles $innerball-animation-time .2s reverse infinite);
+    @include animation(innercircles $innercircles-animation-time .2s reverse infinite);
     @include transform-origin(100%, 50%);
     right: 0;
-    background: $innerball-three-color;
+    background: $innercircles-three-color;
   }
 }
 
-@include keyframes(inner-circles) {
+@include keyframes(innercircles) {
   0%   { @include transform(rotate(0deg)) }
   50%  { @include transform(rotate(360deg)) }
   100% { @include transform(rotate(0deg)) }
