@@ -2975,9 +2975,9 @@
   border-radius: 50%;
 }
 .innerball-loader:not(:required):before {
-  -moz-animation: spin 3s infinite;
-  -webkit-animation: spin 3s infinite;
-  animation: spin 3s infinite;
+  -moz-animation: inner-circles 3s infinite;
+  -webkit-animation: inner-circles 3s infinite;
+  animation: inner-circles 3s infinite;
   -moz-transform-origin: 0 50%;
   -ms-transform-origin: 0 50%;
   -webkit-transform-origin: 0 50%;
@@ -2986,9 +2986,9 @@
   background: #c7efcf;
 }
 .innerball-loader:not(:required):after {
-  -moz-animation: spin 3s 0.2s reverse infinite;
-  -webkit-animation: spin 3s 0.2s reverse infinite;
-  animation: spin 3s 0.2s reverse infinite;
+  -moz-animation: inner-circles 3s 0.2s reverse infinite;
+  -webkit-animation: inner-circles 3s 0.2s reverse infinite;
+  animation: inner-circles 3s 0.2s reverse infinite;
   -moz-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   -webkit-transform-origin: 100% 50%;
@@ -2997,7 +2997,7 @@
   background: #eef5db;
 }
 
-@-moz-keyframes spin {
+@-moz-keyframes inner-circles {
   0% {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -3011,7 +3011,7 @@
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes spin {
+@-webkit-keyframes inner-circles {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -3025,7 +3025,7 @@
     transform: rotate(0deg);
   }
 }
-@keyframes spin {
+@keyframes inner-circles {
   0% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);

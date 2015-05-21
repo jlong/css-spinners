@@ -33,21 +33,21 @@ $innerball-animation-time: 3s !default;
   }
 
   &:before {
-    @include animation(spin $innerball-animation-time infinite);
+    @include animation(inner-circles $innerball-animation-time infinite);
     @include transform-origin(0, 50%);
     left: 0;
     background: $innerball-two-color;
   }
 
   &:after {
-    @include animation(spin $innerball-animation-time .2s reverse infinite);
+    @include animation(inner-circles $innerball-animation-time .2s reverse infinite);
     @include transform-origin(100%, 50%);
     right: 0;
     background: $innerball-three-color;
   }
 }
 
-@include keyframes(spin) {
+@include keyframes(inner-circles) {
   0%   { @include transform(rotate(0deg)) }
   50%  { @include transform(rotate(360deg)) }
   100% { @include transform(rotate(0deg)) }
