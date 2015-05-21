@@ -1,0 +1,53 @@
+@import "compass/css3";
+
+$inner-circles-loader-size: 50px !default;
+$inner-circles-loader-color-1: #19a598 !default;
+$inner-circles-loader-color-2: #c7efcf !default;
+$inner-circles-loader-color-3: #eef5db !default;
+$inner-circles-loader-speed: 3s !default;
+
+/* :not(:required) hides this rule from IE9 and below */
+.inner-circles-loader:not(:required) {
+  @include transform(translate3d(0, 0, 0));
+  position: relative;
+  display: inline-block;
+  width: $inner-circles-loader-size;
+  height: $inner-circles-loader-size;
+  background: rgba($inner-circles-loader-color-1, .5);
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -9999px;
+
+  /* Hides inner circles outside base circle at safari */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: $inner-circles-loader-size;
+    height: $inner-circles-loader-size;
+    border-radius: 50%;
+  }
+
+  &:before {
+    @include animation(inner-circles-loader $inner-circles-loader-speed infinite);
+    @include transform-origin(0, 50%);
+    left: 0;
+    background: $inner-circles-loader-color-2;
+  }
+
+  &:after {
+    @include animation(inner-circles-loader $inner-circles-loader-speed .2s reverse infinite);
+    @include transform-origin(100%, 50%);
+    right: 0;
+    background: $inner-circles-loader-color-3;
+  }
+}
+
+@include keyframes(inner-circles-loader) {
+  0%   { @include transform(rotate(0deg)) }
+  50%  { @include transform(rotate(360deg)) }
+  100% { @include transform(rotate(0deg)) }
+}
