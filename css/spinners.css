@@ -2962,7 +2962,7 @@
   border-radius: 50%;
   overflow: hidden;
   text-indent: -9999px;
-  /* Hides inner circles outsite base circle at safari */
+  /* Hides inner circles outside base circle at safari */
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 .innerball-loader:not(:required):before, .innerball-loader:not(:required):after {
