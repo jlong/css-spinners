@@ -1,3 +1,27 @@
+.wrapper{
+  background:#ddd;
+  width:20em;
+  margin:10em auto;
+}
+
+.card{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 170px;
+}
+
+.cardWrapper{
+  position: relative;
+  width: 100%;
+  background-color: #FFF;
+  display: table;
+  padding-bottom: 10px;
+  border: 1px solid #CCC;
+}
+
+//
+
 @import "compass/css3";
 
 $pong-loader-size: 1em !default;
@@ -128,7 +152,7 @@ $pong-loader-black: #353c39 !default;
 }
 
 /* :not(:required) hides this rule from IE9 and below */
-.orbit-loader:not(:required) {
+.pong-loader:not(:required) {
   width: 8 * $pong-loader-size;
   height: 6 * $pong-loader-size;
   background: $pong-loader-black;
