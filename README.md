@@ -60,6 +60,7 @@ The full list of loading indicator class names are shown below. To see them in a
 | .plus-loader           | Animated Google Plus-like loader.                              |
 | .ball-loader           | A bouncing ball.                                               |
 | .hexdots-loader        | Similar to the dots animation, but with six!                   |
+| .pomg-loader           | Tennis-game simulation.                                        |
 
 
 Customize with Sass
