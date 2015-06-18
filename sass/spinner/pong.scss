@@ -39,7 +39,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (0.5 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 (3.5 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   25%   {
@@ -47,7 +47,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (1.5 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 (2.5 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   50%   {
@@ -55,7 +55,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 0 0 0,
       inset $pong-loader-black 0 (4 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   62.5% {
@@ -63,7 +63,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 $pong-loader-size 0 0,
       inset $pong-loader-black 0 (3 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   75%   {
@@ -71,7 +71,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (4 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 0 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   100%   {
@@ -79,7 +79,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (0.5 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 (3.5 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
 }
@@ -90,7 +90,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 0 0 0,
       inset $pong-loader-black 0 (4 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   50%   {
@@ -98,7 +98,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (3 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 $pong-loader-size-neg 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   62.5% {
@@ -106,7 +106,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (4 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 0 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   75%   {
@@ -114,7 +114,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 (2 * $pong-loader-size) 0 0,
       inset $pong-loader-black 0 (2 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   100%   {
@@ -122,7 +122,7 @@ $pong-loader-black: #353c39 !default;
       inset $pong-loader-black 0 0 0 0,
       inset $pong-loader-black 0 (4 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
 }
@@ -137,10 +137,10 @@ $pong-loader-black: #353c39 !default;
   overflow: hidden;
   text-indent: 100%;
   @include box-shadow(
-    inset $pong-loader-black 0 0em 0 0,
+    inset $pong-loader-black 0 0 0 0,
     inset $pong-loader-black 0 (4 * $pong-loader-size-neg) 0 0,
     inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-    inset $pong-loader-color -1em 0 0 0
+    inset $pong-loader-color $pong-loader-size-neg 0 0 0
   );
   @include animation(paddle1-loader $pong-loader-speed infinite linear);
   &:before{
@@ -150,14 +150,13 @@ $pong-loader-black: #353c39 !default;
     left: 0;
     display: block;
     content: "";
-    width: 1em;
+    width: $pong-loader-size;
     height: 100%;
-    background: red;
     @include box-shadow(
-      inset $pong-loader-black 0 0em 0 0,
+      inset $pong-loader-black 0 0 0 0,
       inset $pong-loader-black 0 (4 * $pong-loader-size-neg) 0 0,
       inset $pong-loader-black (0.3 * $pong-loader-size-neg) 0 0 0,
-      inset $pong-loader-color -1em 0 0 0
+      inset $pong-loader-color $pong-loader-size-neg 0 0 0
     );
   }
   &:after{
