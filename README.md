@@ -61,6 +61,7 @@ The full list of loading indicator class names are shown below. To see them in a
 | .ball-loader           | A bouncing ball.                                               |
 | .hexdots-loader        | Similar to the dots animation, but with six!                   |
 | .inner-circles-loader  | A filling circle with other circles                            |
+| .pong-loader           | Retro tennis-like game simulation from the 70s.                |
 
 
 Customize with Sass

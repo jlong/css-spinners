@@ -1,0 +1,177 @@
+@import "compass/css3";
+
+$pong-loader-size: 80px !default;
+$pong-loader-speed: 1500ms !default;
+$pong-loader-color-1: #8cdb8b !default;
+$pong-loader-color-2: #353c39 !default;
+
+$pong-loader-unit: $pong-loader-size / 8;
+$pong-loader-unit-double: 2 * $pong-loader-unit;
+$pong-loader-unit-neg: 0 - $pong-loader-unit;
+
+@include keyframes(pong-loader) {
+  0%   {
+    left: 0.5 * $pong-loader-unit;
+    top: 0;
+  }
+  25%   {
+    left: 6.5 * $pong-loader-unit;
+    top: 2 * $pong-loader-unit;
+  }
+  50%   {
+    left: 0.5 * $pong-loader-unit;
+  }
+  62.5% {
+    top: 5 * $pong-loader-unit;
+  }
+  75%   {
+    left: 6.5 * $pong-loader-unit;
+    top: 70%;
+  }
+  100%   {
+    left: 0.5 * $pong-loader-unit;
+    top: 0%;
+  }
+}
+
+@include keyframes(pong-loader-paddle-1) {
+  0%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (0.5 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 (3.5 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  25%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (1.5 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 (2.5 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  50%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 0 0 0,
+      inset $pong-loader-color-2 0 (4 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  62.5% {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 $pong-loader-unit 0 0,
+      inset $pong-loader-color-2 0 (3 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  75%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (4 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 0 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  100%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (0.5 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 (3.5 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+}
+
+@include keyframes(pong-loader-paddle-2) {
+  0%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 0 0 0,
+      inset $pong-loader-color-2 0 (4 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  50%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (3 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 $pong-loader-unit-neg 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  62.5% {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (4 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 0 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  75%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 (2 * $pong-loader-unit) 0 0,
+      inset $pong-loader-color-2 0 (2 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+  100%   {
+    @include box-shadow(
+      inset $pong-loader-color-2 0 0 0 0,
+      inset $pong-loader-color-2 0 (4 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+}
+
+/* :not(:required) hides this rule from IE9 and below */
+.pong-loader:not(:required) {
+  width: 8 * $pong-loader-unit;
+  height: 6 * $pong-loader-unit;
+  background: $pong-loader-color-2;
+  position: relative;
+  display:inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  @include box-shadow(
+    inset $pong-loader-color-2 0 0 0 0,
+    inset $pong-loader-color-2 0 (4 * $pong-loader-unit-neg) 0 0,
+    inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+    inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+  );
+  @include animation(pong-loader-paddle-1 $pong-loader-speed infinite linear);
+
+  &:before{
+    @include animation(pong-loader-paddle-2 $pong-loader-speed infinite linear);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: $pong-loader-unit;
+    height: 100%;
+    @include box-shadow(
+      inset $pong-loader-color-2 0 0 0 0,
+      inset $pong-loader-color-2 0 (4 * $pong-loader-unit-neg) 0 0,
+      inset $pong-loader-color-2 (0.3 * $pong-loader-unit-neg) 0 0 0,
+      inset $pong-loader-color-1 $pong-loader-unit-neg 0 0 0
+    );
+  }
+
+  &:after{
+    content: "";
+    display:block;
+    @include animation(pong-loader $pong-loader-speed infinite linear);
+    @include border-radius(50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: $pong-loader-unit;
+    height: $pong-loader-unit;
+    background: $pong-loader-color-1;
+  }
+}
