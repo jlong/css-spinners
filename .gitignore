@@ -11,3 +11,4 @@ pkg
 .bundle
 .sass-cache/**/*
 junk/*
+node_modules/

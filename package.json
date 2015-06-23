@@ -1,0 +1,34 @@
+{
+  "name": "css-spinners",
+  "version": "2.0.2",
+  "description": "Simple CSS spinners and throbbers made with CSS and minimal HTML markup.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlong/css-spinners.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlong/css-spinners/issues"
+  },
+  "keywords": [
+    "spinners",
+    "throbbers",
+    "loaders",
+    "css",
+    "sass"
+  ],
+  "author": "John W. Long",
+  "license": "MIT",
+  "homepage": "http://css-spinners.com",
+  "style": "css/spinners.css",
+  "sass": "sass/spinners.sass",
+  "files": [
+    "css/**/*.css",
+    "sass/**/*.sass",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^1.0.5"
+  }
+}
