@@ -1,0 +1,19 @@
+@import "compass/css3";
+
+$hole-pulser-loader-color: #e67e22 !default;
+
+.hole-pulser:not(:required) {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  display: inline-block;
+  border: 2px solid $hole-pulser-loader-color;
+  @include animation(pulse .7s infinite alternate);
+  @include border-radius(50%);
+}
+
+@include keyframes (pulse) {
+  0% { @include box-shadow($hole-pulser-loader-color 0 0 0px 20px); }
+  40% { @include box-shadow(none); }
+  100% { @include box-shadow($hole-pulser-loader-color 0 0 0px 25px inset); }
+}
