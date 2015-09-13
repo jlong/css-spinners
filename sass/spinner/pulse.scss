@@ -1,0 +1,22 @@
+@import "compass/css3";
+
+$pulse-loader-size: 50px !default;
+$pulse-loader-color: #e67e22 !default;
+
+.pulse-loader:not(:required) {
+  display: inline-block;
+  width: $pulse-loader-size;
+  height: $pulse-loader-size;
+
+  @include animation(pulse-loader .7s linear infinite alternate );
+  border: 2px solid $pulse-loader-color;
+  @include border-radius(50%);
+  overflow: hidden;
+  text-indent: $pulse-loader-size;
+}
+
+@include keyframes(pulse-loader) {
+  0% { @include box-shadow($pulse-loader-color 0 0 0px ($pulse-loader-size / 5 * 2)); }
+  40% { @include box-shadow(none); }
+  100% { @include box-shadow($pulse-loader-color 0 0 0px ($pulse-loader-size / 2) inset); }
+}
