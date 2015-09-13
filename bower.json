@@ -1,6 +1,6 @@
 {
   "name": "css-spinners",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": ["./css/spinners.css", "./css/spinner/*.css", "./sass/spinners.sass", "./sass/*.scss"],
   "ignore": [ "**/.*" ]
 }
