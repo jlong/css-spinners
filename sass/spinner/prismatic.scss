@@ -1,0 +1,38 @@
+@import "compass/css3";
+
+$background-color: #ddd !default;
+$border: 5px solid #fff !default;
+$element-width: 50px !default;
+$element-height: 50px !default;
+$prismatic-loader-speed: 1s !default;
+
+.prismatic-loader:not(:required) {
+  width: $element-width;
+  height: $element-height;
+  @include border-radius(50%);
+  background: $background-color;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-indent: -99999px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background: $background-color;
+    border: $border;
+    @include border-radius(50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate3d(-50%, -50%, 0));
+    @include animation(prismatic-loader $prismatic-loader-speed infinite);
+  }
+}
+
+@include keyframes(prismatic-loader) {
+  from { width: 0; height: 0; }
+  to { height: 100%; width: 100%; }
+}
