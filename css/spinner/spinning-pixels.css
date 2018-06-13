@@ -1,0 +1,79 @@
+/* :not(:required) hides this rule from IE9 and below */
+.spinning-pixels-loader:not(:required) {
+  -moz-animation: spinning-pixels 2s linear infinite;
+  -webkit-animation: spinning-pixels 2s linear infinite;
+  animation: spinning-pixels 2s linear infinite;
+  width: 10px;
+  height: 10px;
+  font-size: 0;
+  display: inline-block;
+  background: #f35626;
+  -moz-box-shadow: 15px 15px 0 0 #f35626, -15px -15px 0 0 #f35626, 15px -15px 0 0 #f35626, -15px 15px 0 0 #f35626, 0 15px 0 0 #f35626, 15px 0 0 0 #f35626, -15px 0 0 0 #f35626, 0 -15px 0 0 #f35626;
+  -webkit-box-shadow: 15px 15px 0 0 #f35626, -15px -15px 0 0 #f35626, 15px -15px 0 0 #f35626, -15px 15px 0 0 #f35626, 0 15px 0 0 #f35626, 15px 0 0 0 #f35626, -15px 0 0 0 #f35626, 0 -15px 0 0 #f35626;
+  box-shadow: 15px 15px 0 0 #f35626, -15px -15px 0 0 #f35626, 15px -15px 0 0 #f35626, -15px 15px 0 0 #f35626, 0 15px 0 0 #f35626, 15px 0 0 0 #f35626, -15px 0 0 0 #f35626, 0 -15px 0 0 #f35626;
+}
+
+@-moz-keyframes spinning-pixels {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    -moz-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+  }
+  75% {
+    -moz-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@-webkit-keyframes spinning-pixels {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+  }
+  75% {
+    -webkit-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes spinning-pixels {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    -moz-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    -webkit-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+  }
+  75% {
+    -moz-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    -webkit-box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+    box-shadow: 20px 20px 0 0 #f35626, -20px -20px 0 0 #f35626, 20px -20px 0 0 #f35626, -20px 20px 0 0 #f35626, 0 10px 0 0 #f35626, 10px 0 0 0 #f35626, -10px 0 0 0 #f35626, 0 -10px 0 0 #f35626;
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
