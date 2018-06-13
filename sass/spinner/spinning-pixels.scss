@@ -9,6 +9,8 @@ $spinning-pixels-duration: 2s !default;
   @include animation(spinning-pixels $spinning-pixels-duration linear infinite);
   width: $spinning-pixels-size;
   height: $spinning-pixels-size;
+  font-size: 0;
+  display: inline-block;
   background: $spinning-pixels-color;
   @include box-shadow(
     15px 15px  0 0 $spinning-pixels-color,
