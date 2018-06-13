@@ -1,0 +1,63 @@
+@import "compass/css3";
+
+$spinning-pixels-size: 10px !default;
+$spinning-pixels-color: #f35626 !default;
+$spinning-pixels-duration: 2s !default;
+
+/* :not(:required) hides this rule from IE9 and below */
+.spinning-pixels-loader:not(:required) {
+  @include animation(spinning-pixels $spinning-pixels-duration linear infinite);
+  width: $spinning-pixels-size;
+  height: $spinning-pixels-size;
+  font-size: 0;
+  display: inline-block;
+  background: $spinning-pixels-color;
+  @include box-shadow(
+    15px 15px  0 0 $spinning-pixels-color,
+    -15px -15px  0 0 $spinning-pixels-color,
+    15px -15px  0 0 $spinning-pixels-color,
+    -15px 15px  0 0 $spinning-pixels-color,
+    0 15px  0 0 $spinning-pixels-color,
+    15px 0  0 0 $spinning-pixels-color,
+    -15px 0  0 0 $spinning-pixels-color,
+    0 -15px 0 0 $spinning-pixels-color
+  );
+}
+
+@include keyframes(spinning-pixels) {
+  0%  {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    @include box-shadow(
+      20px 20px  0 0 $spinning-pixels-color,
+      -20px -20px  0 0 $spinning-pixels-color,
+      20px -20px  0 0 $spinning-pixels-color,
+      -20px 20px  0 0 $spinning-pixels-color,
+      0 10px  0 0 $spinning-pixels-color,
+      10px 0  0 0 $spinning-pixels-color,
+      -10px 0  0 0 $spinning-pixels-color,
+      0 -10px 0 0 $spinning-pixels-color
+    );
+  }
+
+  75% {
+    @include box-shadow(
+      20px 20px  0 0 $spinning-pixels-color,
+      -20px -20px  0 0 $spinning-pixels-color,
+      20px -20px  0 0 $spinning-pixels-color,
+      -20px 20px  0 0 $spinning-pixels-color,
+      0 10px  0 0 $spinning-pixels-color,
+      10px 0  0 0 $spinning-pixels-color,
+      -10px 0  0 0 $spinning-pixels-color,
+      0 -10px 0 0 $spinning-pixels-color
+    );
+  }
+
+  100% {
+    @include transform(rotate(360deg));
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
