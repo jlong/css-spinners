@@ -1,0 +1,50 @@
+@import "compass/css3";
+// generic transform
+@mixin transform($transform) {
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+  -webkit-transform: $transform;
+          transform: $transform;
+}
+
+$echo-loader-color: #FF0000 !default;
+$echo-loader-size: 40px !default;
+$echo-loader-speed: 1.4s ease-in !default;
+$echo-loader-iteration-count: infinite !default;
+$echo-loader-border: 6px !default;
+
+/* :not(:required) hides this rule from IE9 and below */
+.echo-loader:not(:required) {
+  width: $echo-loader-size;
+  height: $echo-loader-size;
+  border: $echo-loader-border solid $echo-loader-color;
+  @include border-radius(50%);
+  animation: echo-loader $echo-loader-speed;
+  animation-iteration-count: $echo-loader-iteration-count;
+  display: inline-block;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+@include keyframes(echo-loader) {
+  0%{
+    @include transform(scale(0));
+    opacity: 0.0;
+  }
+  25%{
+    @include transform(scale(0));
+    opacity: .1;
+  }
+  50%{
+    @include transform(scale(0.1));
+    opacity: .3;
+  }
+  75%{
+    @include transform(scale(0.5));
+    opacity: .5;
+  }
+  100%{
+    @include transform(scale(1));
+    opacity: 0;
+  }
+}
