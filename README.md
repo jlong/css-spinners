@@ -62,8 +62,8 @@ The full list of loading indicator class names are shown below. To see them in a
 | .hexdots-loader        | Similar to the dots animation, but with six!                   |
 | .inner-circles-loader  | A filling circle with other circles                            |
 | .pong-loader           | Retro tennis-like game simulation from the 70s.                |
-| .pulse-loader          | A pulsing circle. Shrinking and enlarging.										  |
-| .spinning-pixels-loader| A spinning pixelated loader.             										  |
+| .pulse-loader          | A pulsing circle. Shrinking and enlarging.					  |					  
+| .spinning-pixels-loader| A spinning pixelated loader.             					  |					  | .echo-loader           | A Growing circle that fade-in-out.                              |
 
 
 Customize with Sass
