@@ -92,3 +92,9 @@ License
 -------
 
 CSS Spinners is freely available under the MIT License. See [LICENSE](LICENSE) file for details.
+
+
+Adaptations
+-----------
+
+[React components](https://github.com/ajwann/css-spinners-react) by Adam Wanninger
