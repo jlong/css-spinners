@@ -1,5 +1,6 @@
 CSS Spinners
 ===========
+![screenshot](https://media.giphy.com/media/l4jwaJLjptYzAhTIdA/giphy.gif)
 
 Simple CSS loading indicators made with CSS and minimal HTML markup.
 
